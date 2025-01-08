@@ -1,0 +1,15 @@
+* = Posible pero complejo
+
+Páginas (En orden):
+
+- (Log in/Register) (Inicio de sesión, olvidar la contraseña*)
+- Principal (Catalogo de juegos (Posibilidad de regalar juegos a amigos o comprar para ti))
+  - Biblioteca (Los juegos comprados)
+  - Contacto empresa (Cambio de rol -> Inversor & Patrocinador)
+  - Perfil del usuario (Cambio contraseña(pop-up), Carga de salgo)
+  - Lista de deseos (Desplegue de lista de los juegos favoritos)
+  - Cesta de compra (Desplegue de lista juegos añadidos -> (Borrar items, suma total precio))
+  - Lista de amigos* (Añadir & Eliminar)
+
+
+  (Subir/Descargar imagenes: [enlace](https://chatgpt.com/share/677ec9e3-edf4-8012-8cfc-4489095289cf))
