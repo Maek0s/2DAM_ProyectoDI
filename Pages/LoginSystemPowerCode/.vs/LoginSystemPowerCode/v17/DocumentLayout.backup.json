@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -14,17 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\AppShell.xaml",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\AppShell.xaml",
+              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\AppShell.xaml",
+              "RelativeToolTip": "LoginSystemPowerCode\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-21T18:37:31.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\MainPage.xaml.cs",
+              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T17:50:04.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\MainPage.xaml",
               "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml",
               "RelativeToolTip": "LoginSystemPowerCode\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-21T17:34:30.224Z",
               "EditorCaption": ""

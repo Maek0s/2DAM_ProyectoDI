@@ -178,3 +178,6 @@ D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net
 D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logopowercode.scale-100.png
+D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpassword.scale-100.png
+D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconuser.scale-100.png
