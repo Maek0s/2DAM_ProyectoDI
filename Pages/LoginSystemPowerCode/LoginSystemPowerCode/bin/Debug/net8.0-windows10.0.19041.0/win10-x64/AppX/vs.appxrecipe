@@ -30,25 +30,25 @@
     <AppXManifest Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-21T18:42:03.491</Modified>
+      <Modified>2025-01-22T18:49:54.489</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-01-21T18:26:24.416</Modified>
+      <Modified>2025-01-22T18:07:14.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.runtimeconfig.json">
       <PackagePath>LoginSystemPowerCode.runtimeconfig.json</PackagePath>
-      <Modified>2025-01-21T17:36:51.025</Modified>
+      <Modified>2025-01-22T17:44:54.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.dll">
       <PackagePath>LoginSystemPowerCode.dll</PackagePath>
-      <Modified>2025-01-21T18:42:02.986</Modified>
+      <Modified>2025-01-22T18:49:52.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>LoginSystemPowerCode.exe</PackagePath>
-      <Modified>2025-01-21T18:42:03.000</Modified>
+      <Modified>2025-01-22T18:49:53.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -300,7 +300,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.deps.json">
       <PackagePath>LoginSystemPowerCode.deps.json</PackagePath>
-      <Modified>2025-01-21T17:36:50.850</Modified>
+      <Modified>2025-01-22T18:07:14.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -309,6 +309,38 @@
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-10-14T22:26:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\firebase.auth\1.0.0\lib\netstandard1.1\Firebase.Auth.dll">
+      <PackagePath>Firebase.Auth.dll</PackagePath>
+      <Modified>2017-04-06T08:38:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\firebaseadmin\3.1.0\lib\net6.0\FirebaseAdmin.dll">
+      <PackagePath>FirebaseAdmin.dll</PackagePath>
+      <Modified>2024-11-07T22:52:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\google.api.gax\4.8.0\lib\netstandard2.0\Google.Api.Gax.dll">
+      <PackagePath>Google.Api.Gax.dll</PackagePath>
+      <Modified>2024-03-25T16:53:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\google.api.gax.rest\4.8.0\lib\netstandard2.0\Google.Api.Gax.Rest.dll">
+      <PackagePath>Google.Api.Gax.Rest.dll</PackagePath>
+      <Modified>2024-03-25T16:53:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\google.apis\1.68.0\lib\net6.0\Google.Apis.dll">
+      <PackagePath>Google.Apis.dll</PackagePath>
+      <Modified>2024-04-15T08:03:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\google.apis.auth\1.68.0\lib\net6.0\Google.Apis.Auth.dll">
+      <PackagePath>Google.Apis.Auth.dll</PackagePath>
+      <Modified>2024-04-15T08:03:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\google.apis.core\1.68.0\lib\net6.0\Google.Apis.Core.dll">
+      <PackagePath>Google.Apis.Core.dll</PackagePath>
+      <Modified>2024-04-15T08:03:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+      <Modified>2021-10-22T23:47:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -382,6 +414,10 @@
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2024-10-29T22:33:30.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.1\lib\netstandard1.0\System.ServiceModel.dll">
+      <PackagePath>System.ServiceModel.dll</PackagePath>
+      <Modified>2016-06-13T21:51:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
       <Modified>2024-06-18T18:30:12.000</Modified>
@@ -441,6 +477,18 @@
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-06-26T19:15:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\newtonsoft.json\13.0.3\lib\net6.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2023-03-08T07:09:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\system.codedom\7.0.0\lib\net7.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+      <Modified>2022-10-18T16:16:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\system.management\7.0.2\runtimes\win\lib\net7.0\System.Management.dll">
+      <PackagePath>System.Management.dll</PackagePath>
+      <Modified>2023-05-24T14:40:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.maui.controls.core\8.0.83\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -585,6 +633,26 @@
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-06-25T19:48:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\System.Private.CoreLib.ni.dll">
+      <PackagePath>System.Private.CoreLib.ni.dll</PackagePath>
+      <Modified>2016-06-13T18:26:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\dbgshim.dll">
+      <PackagePath>dbgshim.dll</PackagePath>
+      <Modified>2016-06-13T18:26:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\mscorlib.ni.dll">
+      <PackagePath>mscorlib.ni.dll</PackagePath>
+      <Modified>2016-06-13T18:26:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\mscorrc.debug.dll">
+      <PackagePath>mscorrc.debug.dll</PackagePath>
+      <Modified>2016-06-13T18:26:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\sos.dll">
+      <PackagePath>sos.dll</PackagePath>
+      <Modified>2016-06-13T18:26:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.maui.controls.compatibility\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

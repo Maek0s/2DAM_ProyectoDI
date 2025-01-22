@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginSystemPowerCode.RegisterSystem"
+             BackgroundColor="#C9FDFF">
+    
+    <ScrollView HorizontalOptions="Center"
+                VerticalOptions="Center">
+        
+        <VerticalStackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand">
+            
+            <Frame BackgroundColor="LightBlue"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"    
+                   Padding="20">
+                
+                <VerticalStackLayout Spacing="20"
+                                     Padding="100">
+                    
+                    <Label Text="Register System"
+                           FontAttributes="Bold"
+                           x:Name="lblSystem"
+                           Margin="50,0,50,40"
+                           FontSize="Large"/>
+
+                    <!-- Usuario -->
+                    <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto">
+                        <Image Source="iconuser.png" 
+                            HeightRequest="20"
+                            WidthRequest="20"
+                            Margin="0,0,5,0"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center" />
+
+                        <Entry x:Name="eUsername"
+                               TextColor="Black"
+                               PlaceholderColor="Black"
+                               Placeholder="Username"
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
+                    </Grid>
+
+                    <!-- Password -->
+                    <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto">
+                        <Image Source="iconpassword.png" 
+                               HeightRequest="20" 
+                               WidthRequest="20"
+                               Margin="0,0,5,0"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+
+                        <Entry x:Name="ePassword"
+                               Placeholder="Password"
+                               TextColor="Black"
+                               PlaceholderColor="Black"
+                               IsPassword="True"
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
+                    </Grid>
+
+                    <Button Text="Crear cuenta"
+                            BackgroundColor="Blue"
+                            Clicked="OnRegisterButtonClicked"/>
+                    
+                    <Label HorizontalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="¿Ya tienes una cuenta? " FontAttributes="Bold"/>
+                                <Span Text="Inicia sesión" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                        
+                        <!-- Al hacer clic ejecuta un evento -->
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLabelClicked" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

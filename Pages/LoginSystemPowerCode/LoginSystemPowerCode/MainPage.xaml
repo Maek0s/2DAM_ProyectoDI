@@ -30,7 +30,7 @@
                                HorizontalOptions="Center" />
 
                         <!-- Entry a la derecha -->
-                        <Entry x:Name="txtUsername"
+                        <Entry x:Name="eUsername"
                                TextColor="Black"
                                PlaceholderColor="Black"
                                Placeholder="Username"
@@ -48,7 +48,7 @@
                                HorizontalOptions="Center" />
 
                         <!-- Entry a la derecha -->
-                        <Entry x:Name="txtPassword"
+                        <Entry x:Name="ePassword"
                                Placeholder="Password"
                                TextColor="Black"
                                PlaceholderColor="Black"
@@ -58,9 +58,14 @@
                     </Grid>
 
                     <Button Text="Login"
-                            BackgroundColor="Blue"/>
+                            BackgroundColor="Blue"
+                            Clicked="OnLoginButtonClicked"/>
                     <Label Text="Crear cuenta"
-                           HorizontalOptions="Center"/>
+                           HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLabelClicked" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </VerticalStackLayout>
             </Frame>
         </VerticalStackLayout>
