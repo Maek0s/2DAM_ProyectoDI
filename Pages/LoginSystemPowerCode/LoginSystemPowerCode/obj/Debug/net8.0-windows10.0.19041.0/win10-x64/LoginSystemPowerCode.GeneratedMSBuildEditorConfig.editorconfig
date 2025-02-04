@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = LoginSystemPowerCode.Pages
 build_metadata.AdditionalFiles.TargetPath = Pages\LoggedIn.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\LoggedIn.xaml
 
+[D:/2DAM_ProyectoDI/Pages/LoginSystemPowerCode/LoginSystemPowerCode/Pages/Perfil.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginSystemPowerCode.Pages.Perfil.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Perfil.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Perfil.xaml
+
 [D:/2DAM_ProyectoDI/Pages/LoginSystemPowerCode/LoginSystemPowerCode/RegisterSystem.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginSystemPowerCode.RegisterSystem.xaml

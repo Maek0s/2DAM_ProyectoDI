@@ -1,19 +1,20 @@
 using System.Diagnostics;
+using LoginSystemPowerCode.Pages;
 
 namespace LoginSystemPowerCode
 {
-	public partial class RegisterSystem : ContentPage
-	{
+    public partial class RegisterSystem : ContentPage
+    {
         private readonly FirebaseAuthService _authService;
 
         public RegisterSystem()
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
             _authService = new FirebaseAuthService(); // Inicializa el servicio
         }
 
-		private async void OnRegisterButtonClicked(object sender, EventArgs e)
-		{
+        private async void OnRegisterButtonClicked(object sender, EventArgs e)
+        {
             string email = eUsername.Text;
             string password = ePassword.Text;
 
@@ -35,7 +36,7 @@ namespace LoginSystemPowerCode
                 ShowMessage($"Cuenta creada exitosamente para: {email}");
 
                 // Redirige a la página de inicio de sesión o a la página principal
-                await Navigation.PushAsync(new ContentPage { Title = "Bienvenido", Content = new Label { Text = "Cuenta creada con éxito." } });
+                await Navigation.PushAsync(new Perfil());
             }
             catch (Exception ex)
             {

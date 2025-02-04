@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginSystemPowerCode.Pages.Perfil"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame WidthRequest="700"
+                   Margin="0"
+                   HeightRequest="550"
+                   BackgroundColor="LightBlue"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                <Grid ColumnDefinitions="Auto, *, Auto"
+                      Padding="10">
+                    <Image Source="fotoperfil.png"
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           Aspect="AspectFill"
+                           Grid.Column="0"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+
+                    <VerticalStackLayout Grid.Column="1"
+                                         VerticalOptions="Start"
+                                         HorizontalOptions="Start"
+                                         Margin="10,0,0,0">
+
+                        <Label x:Name="lblUsuario"
+                               Text="Nombre usuario"
+                               FontSize="20"
+                               HorizontalOptions="Start"/>
+
+                        <Label x:Name="lblDescripcion"
+                               Text="Descripción del usuario"
+                               FontSize="16"
+                               HorizontalOptions="Start"/>
+
+                    </VerticalStackLayout>
+
+                    <Frame WidthRequest="200"
+                           HeightRequest="100"
+                           Grid.Column="2"
+                           BorderColor="Black"
+                           Padding="10"
+                           VerticalOptions="Start"
+                           HorizontalOptions="End"
+                           Margin="20,0,0,0">
+
+                        <VerticalStackLayout>
+                            <Label x:Name="lblSueldoActual"
+                                   Text="Saldo actual: 100 €"
+                                   FontSize="18"
+                                   HorizontalOptions="Center"/>
+
+                            <Button x:Name="btnCargarSueldo"
+                                    Text="Cargar sueldo"
+                                    HorizontalOptions="Center"
+                                    Margin="0,10,0,0"
+                                    VerticalOptions="End"/>
+                        </VerticalStackLayout>
+
+                    </Frame>
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

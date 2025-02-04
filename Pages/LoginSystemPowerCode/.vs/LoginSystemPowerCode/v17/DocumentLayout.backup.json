@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\registersystem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\registersystem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\perfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\perfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\registersystem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\registersystem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\loggedin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\loggedin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\registersystem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\registersystem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\perfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\perfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\loggedin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\loggedin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterSystem.xaml.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\RegisterSystem.xaml.cs",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\RegisterSystem.xaml.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\RegisterSystem.xaml.cs",
-              "RelativeToolTip": "LoginSystemPowerCode\\RegisterSystem.xaml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAIA8wAsAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T18:02:32.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterSystem.xaml",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\RegisterSystem.xaml",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\RegisterSystem.xaml",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\RegisterSystem.xaml",
-              "RelativeToolTip": "LoginSystemPowerCode\\RegisterSystem.xaml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAcwD8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-22T18:01:25.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\AppShell.xaml",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\AppShell.xaml",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\AppShell.xaml",
-              "RelativeToolTip": "LoginSystemPowerCode\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-21T18:37:31.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\MainPage.xaml.cs",
               "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml.cs",
               "RelativeToolTip": "LoginSystemPowerCode\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAYwC8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T17:50:04.689Z",
+              "WhenOpened": "2025-02-04T17:13:11.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\MainPage.xaml",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MainPage.xaml",
-              "RelativeToolTip": "LoginSystemPowerCode\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LoggedIn.xaml.cs",
+              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoggedIn.xaml.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\LoggedIn.xaml.cs",
+              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoggedIn.xaml.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\LoggedIn.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T17:13:07.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Perfil.xaml",
+              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\Perfil.xaml",
+              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml",
+              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\Perfil.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-21T17:34:30.224Z",
+              "WhenOpened": "2025-02-04T17:02:42.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Perfil.xaml.cs",
+              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
+              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T17:00:40.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoginSystem.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\LoginSystem.cs",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\LoginSystem.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\LoginSystem.cs",
-              "RelativeToolTip": "LoginSystemPowerCode\\LoginSystem.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAYwDEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T17:38:35.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\AppShell.xaml.cs",
               "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\AppShell.xaml.cs",
               "RelativeToolTip": "LoginSystemPowerCode\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T18:04:09.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\App.xaml.cs",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\App.xaml.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\App.xaml.cs",
-              "RelativeToolTip": "LoginSystemPowerCode\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T18:07:50.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoggedIn.xaml",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoggedIn.xaml",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\LoggedIn.xaml",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoggedIn.xaml",
-              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\LoggedIn.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-22T17:34:51.518Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:58:03.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterSystem.xaml.cs",
+              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\RegisterSystem.xaml.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\RegisterSystem.xaml.cs",
+              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\RegisterSystem.xaml.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\RegisterSystem.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wCYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T18:02:32.72Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,6 @@
-﻿namespace LoginSystemPowerCode
+﻿using LoginSystemPowerCode.Pages;
+
+namespace LoginSystemPowerCode
 {
     public partial class AppShell : Shell
     {
@@ -9,6 +11,7 @@
             // Rutas de navegación
             Routing.RegisterRoute(nameof(MainPage), typeof(LoginSystemPowerCode.MainPage));
             Routing.RegisterRoute(nameof(RegisterSystem), typeof(LoginSystemPowerCode.RegisterSystem));
+            Routing.RegisterRoute(nameof(Perfil), typeof(LoginSystemPowerCode.Pages.Perfil));
         }
     }
 }

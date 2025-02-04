@@ -9,6 +9,9 @@
     <MauiXaml Update="Pages\LoggedIn.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\Perfil.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="RegisterSystem.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-22T18:49:54.489</Modified>
+      <Modified>2025-02-04T17:28:21.595</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-01-22T18:07:14.379</Modified>
+      <Modified>2025-02-04T17:28:21.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.runtimeconfig.json">
       <PackagePath>LoginSystemPowerCode.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.dll">
       <PackagePath>LoginSystemPowerCode.dll</PackagePath>
-      <Modified>2025-01-22T18:49:52.996</Modified>
+      <Modified>2025-02-04T17:28:19.827</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>LoginSystemPowerCode.exe</PackagePath>
-      <Modified>2025-01-22T18:49:53.120</Modified>
+      <Modified>2025-02-04T17:28:19.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -84,223 +84,227 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.722</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.738</Modified>
+      <Modified>2025-02-04T17:23:33.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.769</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.769</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.769</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.769</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.754</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fotoperfil.scale-100.png">
+      <PackagePath>fotoperfil.scale-100.png</PackagePath>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpassword.scale-100.png">
       <PackagePath>iconpassword.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.722</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconuser.scale-100.png">
       <PackagePath>iconuser.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.722</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logopowercode.scale-100.png">
       <PackagePath>logopowercode.scale-100.png</PackagePath>
-      <Modified>2025-01-21T18:23:56.722</Modified>
+      <Modified>2025-02-04T17:23:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.deps.json">
       <PackagePath>LoginSystemPowerCode.deps.json</PackagePath>
-      <Modified>2025-01-22T18:07:14.102</Modified>
+      <Modified>2025-02-04T17:12:33.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

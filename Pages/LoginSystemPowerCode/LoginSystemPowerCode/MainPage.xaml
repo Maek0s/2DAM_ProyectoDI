@@ -19,6 +19,10 @@
                            Margin="50,0,50,40"
                            FontSize="Large"/>
 
+                    <Label Text=""
+                           x:Name="lblErrors"
+                           TextColor="Red"/>
+
                     <!-- Grid con el icono y Entry -->
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto">
                         <!-- Icono a la izquierda -->

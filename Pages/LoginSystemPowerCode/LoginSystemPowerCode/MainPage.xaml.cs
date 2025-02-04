@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using LoginSystemPowerCode.Pages;
 
 namespace LoginSystemPowerCode
 {
@@ -11,6 +12,7 @@ namespace LoginSystemPowerCode
             InitializeComponent();
             _authService = new FirebaseAuthService(); // Inicializa el servicio
 
+            ePassword.Completed += (s, e) => OnLoginButtonClicked(s, e);
         }
 
         private async void OnLoginButtonClicked(object sender, EventArgs e)
@@ -40,14 +42,13 @@ namespace LoginSystemPowerCode
                 CurrentUser.FirebaseToken = firebaseToken;
                 CurrentUser.Email = email;
 
-                ShowMessage($"Bienvenido, {email}!");
-
                 // Redirige o realiza acciones después del inicio de sesión exitoso
-                await Navigation.PushAsync(new ContentPage { Title = "Dashboard", Content = new Label { Text = "Inicio exitoso." } });
+                await Navigation.PushAsync(new Perfil());
             }
             catch (Exception ex)
             {
-                ShowMessage($"Error: {ex.Message}");
+                ShowMessage($"Error en las credenciales.");
+                Debug.WriteLine(ex);
             }
         }
 
@@ -57,9 +58,9 @@ namespace LoginSystemPowerCode
             Navigation.PushAsync(new RegisterSystem());
         }
 
-
         private void ShowMessage(string message)
         {
+           lblErrors.Text = message;
            Debug.WriteLine(message);
         }
     }
