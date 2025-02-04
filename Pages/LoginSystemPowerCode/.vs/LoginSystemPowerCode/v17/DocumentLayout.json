@@ -46,8 +46,7 @@
               "RelativeToolTip": "LoginSystemPowerCode\\MainPage.xaml.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAYwC8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T17:13:11.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T17:13:11.529Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "LoginSystemPowerCode\\Pages\\LoggedIn.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T17:13:07.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T17:13:07.497Z"
             },
             {
               "$type": "Document",
@@ -70,7 +68,7 @@
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\Perfil.xaml",
               "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml",
               "RelativeToolTip": "LoginSystemPowerCode\\Pages\\Perfil.xaml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-04T17:02:42.294Z",
               "EditorCaption": ""
@@ -85,8 +83,7 @@
               "RelativeToolTip": "LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T17:00:40.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T17:00:40.642Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "LoginSystemPowerCode\\AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:58:03.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T16:58:03.101Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "LoginSystemPowerCode\\RegisterSystem.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAA1wCYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T18:02:32.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T18:02:32.72Z"
             }
           ]
         }

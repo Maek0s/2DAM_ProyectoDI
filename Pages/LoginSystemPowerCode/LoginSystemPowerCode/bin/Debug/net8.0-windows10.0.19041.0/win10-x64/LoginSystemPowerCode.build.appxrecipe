@@ -223,6 +223,9 @@
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconuser.scale-100.png">
       <PackagePath>iconuser.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logolol.scale-100.png">
+      <PackagePath>logolol.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logopowercode.scale-100.png">
       <PackagePath>logopowercode.scale-100.png</PackagePath>
     </AppxPackagedFile>
