@@ -2978,7 +2978,7 @@ int drawable design_ic_visibility 0x7f07005a
 int drawable design_ic_visibility_off 0x7f07005b
 int drawable design_password_eye 0x7f07005c
 int drawable design_snackbar_background 0x7f07005d
-int drawable dotnet_bot 0x7f07005e
+int drawable dotnet_b1ot 0x7f07005e
 int drawable fotoperfil 0x7f07005f
 int drawable ic_arrow_back_black_24 0x7f070060
 int drawable ic_call_answer 0x7f070061

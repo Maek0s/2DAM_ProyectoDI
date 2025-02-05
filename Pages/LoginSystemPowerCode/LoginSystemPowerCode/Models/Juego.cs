@@ -1,0 +1,92 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LoginSystemPowerCode.Models
+{
+    public class Juego : INotifyPropertyChanged
+    {
+        // Declaración de variables //
+
+        private String _nombre;
+        public String Nombre
+        {
+            get { return _nombre; }
+            set { _nombre = value; OnPropertyChanged(); }
+        }
+
+        private int _precio;
+        public int Precio
+        {
+            get { return _precio; }
+            set { _precio = value; OnPropertyChanged(); }
+        }
+
+        private String _descripcion;
+        public String Descripcion
+        {
+            get { return _descripcion; }
+            set { _descripcion = value; OnPropertyChanged(); }
+        }
+
+        private String _genero;
+        public String Genero
+        {
+            get { return _genero; }
+            set { _genero = value; OnPropertyChanged(); }
+        }
+
+        private String _imagen;
+        public String Imagen
+        {
+            get { return _imagen; }
+            set { _imagen = value; OnPropertyChanged(); }
+        }
+
+        // On Property Changed //
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        // Constructores //
+
+        /// <summary>
+        /// Constructor de la clase Juego
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="precio"></param>
+        /// <param name="descripcion"></param>
+        /// <param name="genero"></param>
+        /// <param name="imagen"></param>
+        public Juego(String nombre, int precio, String descripcion, String genero, String imagen)
+        {
+            Nombre = nombre;
+            Precio = precio;
+            Descripcion = descripcion;
+            Genero = genero;
+            Imagen = imagen;
+        }
+
+        /// <summary>
+        /// Constructor vacío de la clase Juego
+        /// </summary>
+        public Juego()
+        {
+        }
+
+        /// <summary>
+        /// Método de prueba
+        /// </summary>
+        public void prueba()
+        {
+            Console.WriteLine("Prueba");
+        }
+    }
+}

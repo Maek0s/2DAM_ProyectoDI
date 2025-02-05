@@ -20,7 +20,7 @@ namespace LoginSystemPowerCode
 
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
-                ShowMessage("Por favor, ingresa tu correo y contraseña.");
+                ShowMessage("Por favor, ingresa tu correo y contraseï¿½a.");
                 return;
             }
 
@@ -35,7 +35,7 @@ namespace LoginSystemPowerCode
 
                 ShowMessage($"Cuenta creada exitosamente para: {email}");
 
-                // Redirige a la página de inicio de sesión o a la página principal
+                // Redirige a la pï¿½gina de inicio de sesiï¿½n o a la pï¿½gina principal
                 await Navigation.PushAsync(new Perfil());
             }
             catch (Exception ex)
@@ -46,7 +46,7 @@ namespace LoginSystemPowerCode
 
         private void OnLabelClicked(object sender, EventArgs e)
         {
-            // Redirige a la página de inicio de sesión
+            // Redirige a la pï¿½gina de inicio de sesiï¿½n
             Navigation.PushAsync(new MainPage());
         }
 
