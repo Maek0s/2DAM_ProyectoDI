@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using LoginSystemPowerCode.Models;
 using LoginSystemPowerCode.Pages;
@@ -24,7 +25,6 @@ namespace LoginSystemPowerCode.Pages {
 
         public void testing()
         {
-            Juego lol = new Juego("League of legends", 20, "Descripción", "MOBA", "logolol");
             
         }
 

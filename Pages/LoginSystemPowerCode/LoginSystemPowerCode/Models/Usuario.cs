@@ -19,11 +19,11 @@ namespace LoginSystemPowerCode.Models
             set { _nombre = value; OnPropertyChanged(); }
         }
 
-        private String _apellido;
-        public String Apellido
+        private String _nickname;
+        public String Nickname
         {
-            get { return _apellido; }
-            set { _apellido = value; OnPropertyChanged(); }
+            get { return _nickname; }
+            set { _nickname = value; OnPropertyChanged(); }
         }
 
         private String _correo;
@@ -40,8 +40,21 @@ namespace LoginSystemPowerCode.Models
             set { _imagen = value; OnPropertyChanged(); }
         }
 
+        public int CantidadJuegos => ListaJuegos?.Count ?? 0;
+
+        public int HorasJugadasTotales => ListaJuegos?.Sum(j => j.HorasJugadas) ?? 0;
+
         private ObservableCollection<Juego> _listaJuegos;
-        public ObservableCollection<Juego> listaJuegos { get; set; }
+        public ObservableCollection<Juego> ListaJuegos {
+            get { return _listaJuegos; } 
+            set 
+            {
+                _listaJuegos = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(CantidadJuegos));
+                OnPropertyChanged(nameof(HorasJugadasTotales));
+            } 
+        }
 
         // On Property Changed //
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -56,14 +69,14 @@ namespace LoginSystemPowerCode.Models
         /// Constructor de la clase Usuario
         /// </summary>
         /// <param name="nombre">Nombre del usuario</param>
-        /// <param name="apellido">Apellido del usuario</param>
+        /// <param name="nickname">Apellido del usuario</param>
         /// <param name="correo">Correo del usuario</param>
         /// <param name="imagen">Nombre de la imagen del usuario</param>
 
-        public Usuario(String nombre, String apellido, String correo, String imagen)
+        public Usuario(String nombre, String nickname, String correo, String imagen)
         {
             Nombre = nombre;
-            Apellido = apellido;
+            Nickname = nickname;
             Correo = correo;
             Imagen = imagen;
         }
@@ -72,15 +85,28 @@ namespace LoginSystemPowerCode.Models
         /// Constructor de la clase Usuario
         /// </summary>
         /// <param name="nombre">Nombre del usuario</param>
-        /// <param name="apellido">Apellido del usuario</param>
+        /// <param name="nickname">Nickname del usuario</param>
         /// <param name="correo">Correo del usuario</param>
         /// <param name="imagen">Nombre de la imagen del usuario</param>
 
-        public Usuario(String nombre, String apellido, String correo)
+        public Usuario(String nombre, String nickname, String correo)
         {
             Nombre = nombre;
-            Apellido = apellido;
+            Nickname = nickname;
             Correo = correo;
+            /* Elegir random entre todas
+             * 
+             * Imagen = ;
+            */
+        }
+
+        public Usuario(String nombre, String nickname, String correo, ObservableCollection<Juego> listaJuegos, String imagen)
+        {
+            Nombre = nombre;
+            Nickname = nickname;
+            Correo = correo;
+            ListaJuegos = listaJuegos;
+            Imagen = imagen;
             /* Elegir random entre todas
              * 
              * Imagen = ;

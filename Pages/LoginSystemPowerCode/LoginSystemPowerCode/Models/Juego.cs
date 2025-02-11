@@ -33,18 +33,18 @@ namespace LoginSystemPowerCode.Models
             set { _descripcion = value; OnPropertyChanged(); }
         }
 
-        private String _genero;
-        public String Genero
-        {
-            get { return _genero; }
-            set { _genero = value; OnPropertyChanged(); }
-        }
-
         private String _imagen;
         public String Imagen
         {
             get { return _imagen; }
             set { _imagen = value; OnPropertyChanged(); }
+        }
+
+        public int _horasJugadas;
+        public int HorasJugadas
+        {
+            get { return _horasJugadas; }
+            set { _horasJugadas = value; OnPropertyChanged(); }
         }
 
         // On Property Changed //
@@ -63,14 +63,14 @@ namespace LoginSystemPowerCode.Models
         /// <param name="nombre"></param>
         /// <param name="precio"></param>
         /// <param name="descripcion"></param>
-        /// <param name="genero"></param>
+        /// <param name="horasJugadas"></param>
         /// <param name="imagen"></param>
-        public Juego(String nombre, int precio, String descripcion, String genero, String imagen)
+        public Juego(String nombre, int precio, String descripcion, int horasJugadas, String imagen)
         {
             Nombre = nombre;
             Precio = precio;
             Descripcion = descripcion;
-            Genero = genero;
+            HorasJugadas = horasJugadas;
             Imagen = imagen;
         }
 

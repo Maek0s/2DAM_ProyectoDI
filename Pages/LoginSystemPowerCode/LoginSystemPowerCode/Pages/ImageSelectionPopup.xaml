@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="LoginSystemPowerCode.Pages.ImageSelectionPopup">
+
+    <VerticalStackLayout Padding="10" BackgroundColor="Gray" Spacing="0" HeightRequest="800" 
+                         WidthRequest="650" HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Selecciona una imagen" FontSize="Large" HorizontalOptions="Center"/>
+
+        <CollectionView x:Name="ImageCollection" ItemsSource="{Binding ImageCollectionView}"
+                        SelectionMode="Single" SelectionChanged="OnImageSelected" VerticalOptions="FillAndExpand">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3"/>
+                <!-- Ajuste para 3 imágenes por fila -->
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame>
+                        <Image Source="{Binding ImagePath}" WidthRequest="100" HeightRequest="100" Aspect="AspectFit">
+                            <Image.Clip>
+                                <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50"/>
+                            </Image.Clip>
+                        </Image>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+    
+</toolkit:Popup>

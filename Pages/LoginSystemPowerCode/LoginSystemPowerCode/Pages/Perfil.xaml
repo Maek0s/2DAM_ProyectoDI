@@ -17,33 +17,96 @@
                 <Grid ColumnDefinitions="Auto, *, Auto"
                       RowDefinitions="Auto, Auto, Auto, Auto"
                       Padding="10">
-                    <Image Source="fotoperfil.png"
-                           WidthRequest="100"
-                           HeightRequest="100"
-                           Aspect="AspectFill"
-                           Grid.Column="0"
-                           Grid.Row="0"
-                           VerticalOptions="Start"
-                           HorizontalOptions="Start"/>
+                    <Grid Grid.Column="0" Grid.Row="0">
 
-                    <VerticalStackLayout Grid.Column="1"
-                                         Grid.Row="0"
-                                         VerticalOptions="Start"
-                                         HorizontalOptions="Start"
-                                         Margin="10,0,0,0">
+                        <Frame WidthRequest="110"
+                                HeightRequest="110"
+                                CornerRadius="55"
+                                BorderColor="Black"
+                                BackgroundColor="White"
+                                Padding="0"
+                                HasShadow="False"
+                                VerticalOptions="Start"
+                                HorizontalOptions="Start">
 
-                        <Label x:Name="lblUsuario"
-                               Text="Nombre usuario"
-                               FontSize="20"
-                               HorizontalOptions="Start"/>
+                            <Image Source="{Binding Usuario.Imagen}"
+                                    WidthRequest="110"
+                                    HeightRequest="110"
+                                    Aspect="AspectFill"
+                                    VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand">
+                                <Image.Clip>
+                                    <EllipseGeometry Center="55,55" RadiusX="55" RadiusY="55"/>
+                                </Image.Clip>
+                            </Image>
+                        </Frame>
 
-                        <Label x:Name="lblDescripcion"
-                               Text="Descripción del usuario"
-                               FontSize="16"
-                               HorizontalOptions="Start"/>
+                        <Image Source="pencil.png"
+                                WidthRequest="25"
+                                HeightRequest="25"
+                                Aspect="AspectFill"
+                                VerticalOptions="Start"
+                                HorizontalOptions="EndAndExpand"
+                                Margin="20,0,0,0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnChangeProfileImage_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
 
-                    </VerticalStackLayout>
+                    </Grid>
 
+                    <HorizontalStackLayout Grid.Column="1"
+                                           Grid.Row="0"
+                                           VerticalOptions="Start"
+                                           HorizontalOptions="Start"
+                                           Spacing="10">
+
+                        <VerticalStackLayout VerticalOptions="Start"
+                                             HorizontalOptions="Start"
+                                             Margin="10,0,0,0">
+
+                            <HorizontalStackLayout>
+                                <Label x:Name="lblNickname"
+                                       Text="{Binding Usuario.Nickname}"
+                                       FontSize="20"
+                                       HorizontalOptions="Start"/>
+
+                                <Image Source="pencil.png"
+                                       x:Name="imgNickname"
+                                       WidthRequest="15"
+                                       HeightRequest="15"
+                                       Margin="5,5,0,0"
+                                       Aspect="AspectFill"
+                                       VerticalOptions="Start"
+                                       HorizontalOptions="Start">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnChangeNickname_Tapped"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label x:Name="lblNombre"
+                                       Text="{Binding Usuario.Nombre}"
+                                       FontSize="16"
+                                       HorizontalOptions="Start"/>
+
+                                <Image Source="pencil.png"
+                                       WidthRequest="15"
+                                       HeightRequest="15"
+                                       Margin="5,3,0,0"
+                                       Aspect="AspectFill"
+                                       VerticalOptions="Start"
+                                       HorizontalOptions="Start">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnChangeNombre_Tapped"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </HorizontalStackLayout>
+
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    
                     <Frame WidthRequest="200"
                            HeightRequest="50"
                            Grid.Column="2"
@@ -69,11 +132,6 @@
                                          HorizontalOptions="End"
                                          Margin="20,-30,0,0"
                                          Spacing="10">
-                        
-                        <Button x:Name="btnEditarNombre"
-                                Text="Editar nombre"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Start"/>
 
                         <Button x:Name="btnCambiarPassword"
                                 Text="Cambiar contraseña"
@@ -99,7 +157,7 @@
                             <VerticalStackLayout Grid.Column="0">
                                 <Label Text="Cantidad juegos"
                                        FontAttributes="Bold"/>
-                                <Label Text="0 juegos"
+                                <Label Text="{Binding Usuario.CantidadJuegos, StringFormat='{0} juegos'}"
                                        HorizontalOptions="Start"
                                        Margin="20,0,0,0"/>
                             </VerticalStackLayout>
@@ -107,7 +165,7 @@
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="Horas jugadas"
                                        FontAttributes="Bold"/>
-                                <Label Text="120 horas"
+                                <Label Text="{Binding Usuario.HorasJugadasTotales, StringFormat='{0} horas'}"
                                        Margin="15,0,0,0"/>
                             </VerticalStackLayout>
                         </Grid>
@@ -127,29 +185,36 @@
                             VerticalOptions="Start">
 
                         <ScrollView>
-                            <VerticalStackLayout Spacing="5">
-                                <Frame HeightRequest="60" CornerRadius="20">
-                                    <HorizontalStackLayout Spacing="10"
-                                                           HorizontalOptions="FillAndExpand">
-                                        <Image Source="logolol.png"
-                                               WidthRequest="60"
-                                               HeightRequest="45"
-                                               Aspect="AspectFit"
-                                               HorizontalOptions="Start"
-                                               Margin="-25,0,0,0"/>
+                            <VerticalStackLayout Spacing="20">
+                                <CollectionView ItemsSource="{Binding Usuario.ListaJuegos}">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Frame HeightRequest="60" CornerRadius="20">
+                                                <HorizontalStackLayout Spacing="10"
+                                                                       HorizontalOptions="FillAndExpand"
+                                                                       Margin="0,10,0,10">
+                                                    <Image Source="{Binding Imagen}"
+                                                           WidthRequest="60"
+                                                           HeightRequest="45"
+                                                           Aspect="AspectFit"
+                                                           HorizontalOptions="Start"
+                                                           Margin="-25,0,0,0"/>
 
-                                        <Label Text="League of Legends"
-                                                FontSize="14"
-                                                HorizontalOptions="StartAndExpand"
-                                                VerticalOptions="Center"/>
+                                                    <Label Text="{Binding Nombre}"
+                                                            FontSize="14"
+                                                            HorizontalOptions="StartAndExpand"
+                                                            VerticalOptions="Center"/>
 
-                                        <Label Text="120 horas"
-                                               FontSize="14"
-                                               Margin="50,0,0,0"
-                                               HorizontalOptions="End"
-                                               VerticalOptions="Center"/>
-                                    </HorizontalStackLayout>
-                                </Frame>
+                                                    <Label Text="{Binding HorasJugadas, StringFormat='{0} horas'}"
+                                                           FontSize="14"
+                                                           Margin="50,0,0,0"
+                                                           HorizontalOptions="End"
+                                                           VerticalOptions="Center"/>
+                                                </HorizontalStackLayout>
+                                            </Frame>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
                             </VerticalStackLayout>
                         </ScrollView>
 

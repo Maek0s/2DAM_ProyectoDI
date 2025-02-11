@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 using Microsoft.Maui.LifecycleEvents;
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
@@ -14,6 +15,7 @@ namespace LoginSystemPowerCode
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -26,26 +28,26 @@ namespace LoginSystemPowerCode
 
             // Para ponerlo en pantalla completa
 #if WINDOWS
-            builder.ConfigureLifecycleEvents(events =>
-            {
-                events.AddWindows(wndLifeCycleBuilder =>
+                builder.ConfigureLifecycleEvents(events =>
                 {
-                    wndLifeCycleBuilder.OnWindowCreated(window =>
+                    events.AddWindows(wndLifeCycleBuilder =>
                     {
-                        IntPtr nativeWindowHandle = WindowNative.GetWindowHandle(window);
-                        WindowId win32WindowsId = Win32Interop.GetWindowIdFromWindow(nativeWindowHandle);
-                        AppWindow winuiAppWindow = AppWindow.GetFromWindowId(win32WindowsId);
-                        if (winuiAppWindow.Presenter is OverlappedPresenter p)
-                            p.Maximize();
-                        else
+                        wndLifeCycleBuilder.OnWindowCreated(window =>
                         {
-                            const int width = 1200;
-                            const int height = 800;
-                            winuiAppWindow.MoveAndResize(new RectInt32(1920 / 2 - width / 2, 1080 / 2 - height / 2, width, height));
-                        }
+                            IntPtr nativeWindowHandle = WindowNative.GetWindowHandle(window);
+                            WindowId win32WindowsId = Win32Interop.GetWindowIdFromWindow(nativeWindowHandle);
+                            AppWindow winuiAppWindow = AppWindow.GetFromWindowId(win32WindowsId);
+                            if (winuiAppWindow.Presenter is OverlappedPresenter p)
+                                p.Maximize();
+                            else
+                            {
+                                const int width = 1200;
+                                const int height = 800;
+                                winuiAppWindow.MoveAndResize(new RectInt32(1920 / 2 - width / 2, 1080 / 2 - height / 2, width, height));
+                            }
+                        });
                     });
                 });
-            });
 #endif
 
             return builder.Build();

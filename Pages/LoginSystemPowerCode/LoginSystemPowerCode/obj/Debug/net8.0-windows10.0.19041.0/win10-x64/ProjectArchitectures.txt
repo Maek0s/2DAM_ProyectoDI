@@ -1,1 +1,1 @@
-E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\LoginSystemPowerCode.csproj;x64
+D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\LoginSystemPowerCode.csproj;x64
