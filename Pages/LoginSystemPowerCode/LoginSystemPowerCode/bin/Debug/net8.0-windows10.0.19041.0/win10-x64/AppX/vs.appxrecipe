@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-02-11T18:47:11.638</Modified>
+      <Modified>2025-02-12T18:52:20.493</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-02-11T18:23:34.756</Modified>
+      <Modified>2025-02-12T18:46:39.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.runtimeconfig.json">
       <PackagePath>LoginSystemPowerCode.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.dll">
       <PackagePath>LoginSystemPowerCode.dll</PackagePath>
-      <Modified>2025-02-11T18:47:10.045</Modified>
+      <Modified>2025-02-12T18:52:19.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>LoginSystemPowerCode.exe</PackagePath>
-      <Modified>2025-02-11T18:47:10.170</Modified>
+      <Modified>2025-02-12T18:52:19.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -312,7 +312,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.deps.json">
       <PackagePath>LoginSystemPowerCode.deps.json</PackagePath>
-      <Modified>2025-02-11T18:23:34.460</Modified>
+      <Modified>2025-02-12T18:46:39.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marcoszahonero\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

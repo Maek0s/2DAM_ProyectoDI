@@ -40,6 +40,17 @@ namespace LoginSystemPowerCode.Models
             set { _imagen = value; OnPropertyChanged(); }
         }
 
+        private int _saldo;
+        public int Saldo
+        {
+            get { return _saldo; }
+            set 
+            {
+                _saldo = value;
+                OnPropertyChanged();
+            }
+        }
+
         public int CantidadJuegos => ListaJuegos?.Count ?? 0;
 
         public int HorasJugadasTotales => ListaJuegos?.Sum(j => j.HorasJugadas) ?? 0;
@@ -73,12 +84,13 @@ namespace LoginSystemPowerCode.Models
         /// <param name="correo">Correo del usuario</param>
         /// <param name="imagen">Nombre de la imagen del usuario</param>
 
-        public Usuario(String nombre, String nickname, String correo, String imagen)
+        public Usuario(String nombre, String nickname, String correo, String imagen, int saldo)
         {
             Nombre = nombre;
             Nickname = nickname;
             Correo = correo;
             Imagen = imagen;
+            Saldo = saldo;
         }
 
         /// <summary>
@@ -87,26 +99,25 @@ namespace LoginSystemPowerCode.Models
         /// <param name="nombre">Nombre del usuario</param>
         /// <param name="nickname">Nickname del usuario</param>
         /// <param name="correo">Correo del usuario</param>
-        /// <param name="imagen">Nombre de la imagen del usuario</param>
 
         public Usuario(String nombre, String nickname, String correo)
         {
             Nombre = nombre;
             Nickname = nickname;
             Correo = correo;
-            /* Elegir random entre todas
-             * 
-             * Imagen = ;
-            */
+            ListaJuegos = new ObservableCollection<Juego>();
+            Imagen = "avatarlogopowercode.png";
+            Saldo = 0;
         }
 
-        public Usuario(String nombre, String nickname, String correo, ObservableCollection<Juego> listaJuegos, String imagen)
+        public Usuario(String nombre, String nickname, String correo, ObservableCollection<Juego> listaJuegos, String imagen, int saldo)
         {
             Nombre = nombre;
             Nickname = nickname;
             Correo = correo;
             ListaJuegos = listaJuegos;
             Imagen = imagen;
+            Saldo = saldo;
             /* Elegir random entre todas
              * 
              * Imagen = ;
@@ -118,13 +129,6 @@ namespace LoginSystemPowerCode.Models
         /// </summary>
         public Usuario()
         {
-        }
-    
-        public String getRandomImage()
-        {
-            Random random = new Random();
-            int randomNumber = random.Next(1, 5);
-            return "image" + randomNumber + ".png";
         }
     }
 }

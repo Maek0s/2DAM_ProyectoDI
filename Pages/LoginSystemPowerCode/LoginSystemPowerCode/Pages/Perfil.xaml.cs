@@ -1,6 +1,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Windows.Input;
 using CommunityToolkit.Maui.Views;
 using LoginSystemPowerCode.Models;
 
@@ -17,20 +18,46 @@ namespace LoginSystemPowerCode.Pages {
                 {
                     _usuario = value;
                     OnPropertyChanged(nameof(Usuario));
+                    OnPropertyChanged(nameof(Usuario.ListaJuegos));
                 }
             }
         }
+
+        public ICommand ResetPasswordCommand { get; }
 
         public Perfil()
 		{
 			InitializeComponent();
 
-			BindingContext = this;
+            ResetPasswordCommand = new Command(async () => await ResetPassword());
 
             testing();
-		}
 
-		public void testing()
+            BindingContext = this;
+        }
+
+        private async Task ResetPassword()
+        {
+            if (string.IsNullOrWhiteSpace(CurrentUser.Email))
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", "No hay un email registrado.", "OK");
+                return;
+            }
+
+            var authService = new FirebaseAuthService();
+            try
+            {
+                await authService.SendPasswordResetEmail(CurrentUser.Email);
+                await Application.Current.MainPage.DisplayAlert("Éxito", "Se ha enviado un correo para restablecer la contraseña.", "OK");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+            }
+        }
+
+
+        public void testing()
 		{
             Juego lol = new Juego("League of legends", 20, "Descripción", 130, "logolol.png");
             Juego mrivals = new Juego("Marvel Rivals", 40, "Descripción", 10, "avatarlogomarvelrivals.jpg");
@@ -38,7 +65,7 @@ namespace LoginSystemPowerCode.Pages {
             listaJuegos.Add(lol);
             listaJuegos.Add(mrivals);
 
-            Usuario = new Usuario("Marcos", "Maek0s", "maek0spam@gmail.com", listaJuegos, "logopowercode.png");
+            Usuario = new Usuario("Marcos", "Maek0s", "maek0spam@gmail.com", listaJuegos, "logopowercode.png", 100);
             Debug.WriteLine(Usuario.Nombre);
         }
 

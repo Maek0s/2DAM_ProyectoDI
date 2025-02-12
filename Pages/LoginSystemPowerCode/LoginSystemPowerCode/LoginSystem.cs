@@ -19,6 +19,18 @@ namespace LoginSystemPowerCode
             return auth.FirebaseToken; // Token de autenticación
         }
 
+        public async Task SendPasswordResetEmail(string email)
+        {
+            try
+            {
+                await _authProvider.SendPasswordResetEmailAsync(email);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al enviar el correo de restablecimiento: {ex.Message}");
+            }
+        }
+
         public async Task<string> CreateUserWithEmailPassword(string email, string password)
         {
             var auth = await _authProvider.CreateUserWithEmailAndPasswordAsync(email, password);
