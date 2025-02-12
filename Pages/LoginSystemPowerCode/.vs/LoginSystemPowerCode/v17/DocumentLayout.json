@@ -1,45 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\",
+  "WorkspaceRootPath": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\perfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\perfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\perfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\perfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\perfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\viewmodels\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\viewmodels\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\models\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\models\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\imageselectionpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\imageselectionpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\imageselectionpopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\imageselectionpopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\imageselectionpopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\models\\imagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\viewmodels\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\viewmodels\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\models\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\models\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\pages\\imageselectionpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\pages\\imageselectionpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\models\\imagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\models\\imagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|d:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|e:\\2dam_proyectodi\\pages\\loginsystempowercode\\loginsystempowercode\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9A5BF9-6289-4B94-8B2B-91A8E5DCB865}|LoginSystemPowerCode\\LoginSystemPowerCode.csproj|solutionrelative:loginsystempowercode\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,30 +54,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PerfilViewModel.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
-              "RelativeToolTip": "LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T18:42:55.319Z",
+              "WhenOpened": "2025-02-12T20:30:48.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\LoginPage.xaml",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\LoginPage.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-12T20:59:03.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LoginSystem.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\LoginSystem.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\LoginSystem.cs",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\LoginSystem.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\LoginSystem.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\LoginSystem.cs",
               "RelativeToolTip": "LoginSystemPowerCode\\LoginSystem.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwB8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T18:39:44.042Z",
               "EditorCaption": ""
@@ -81,38 +98,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Models\\Usuario.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Usuario.cs",
-              "RelativeToolTip": "LoginSystemPowerCode\\Models\\Usuario.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwG0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T18:19:18.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Juego.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Juego.cs",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Models\\Juego.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Juego.cs",
-              "RelativeToolTip": "LoginSystemPowerCode\\Models\\Juego.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAYwFYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T18:19:33.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Perfil.xaml",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\Perfil.xaml",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml",
               "RelativeToolTip": "LoginSystemPowerCode\\Pages\\Perfil.xaml",
-              "ViewState": "AgIAAHMAAAAAAAAAAAD4v3wAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAHUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-11T18:02:02.609Z",
               "EditorCaption": ""
@@ -120,23 +111,60 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Perfil.xaml.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
-              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\Perfil.xaml.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAewEMAAABzAAAAAAAAAA==",
+              "Title": "ImageSelectionPopup.xaml",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
+              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-11T17:40:21.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Juego.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Juego.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Models\\Juego.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Juego.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\Models\\Juego.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwFYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T18:18:21.841Z",
+              "WhenOpened": "2025-02-11T18:19:33.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Models\\Usuario.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\Usuario.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\Models\\Usuario.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwG0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T18:19:18.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "PerfilViewModel.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
+              "RelativeDocumentMoniker": "LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
+              "RelativeToolTip": "LoginSystemPowerCode\\ViewModels\\PerfilViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T18:42:55.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ImageSelectionPopup.xaml.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml.cs",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml.cs",
               "RelativeToolTip": "LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -144,23 +172,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImageSelectionPopup.xaml",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
-              "RelativeDocumentMoniker": "LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
-              "RelativeToolTip": "LoginSystemPowerCode\\Pages\\ImageSelectionPopup.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-11T17:40:21.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MauiProgram.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MauiProgram.cs",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\MauiProgram.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MauiProgram.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\MauiProgram.cs",
               "RelativeToolTip": "LoginSystemPowerCode\\MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,11 +184,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ImageModel.cs",
-              "DocumentMoniker": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\ImageModel.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\ImageModel.cs",
               "RelativeDocumentMoniker": "LoginSystemPowerCode\\Models\\ImageModel.cs",
-              "ToolTip": "D:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\ImageModel.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\LoginSystemPowerCode\\LoginSystemPowerCode\\Models\\ImageModel.cs",
               "RelativeToolTip": "LoginSystemPowerCode\\Models\\ImageModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

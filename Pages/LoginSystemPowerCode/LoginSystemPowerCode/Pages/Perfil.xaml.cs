@@ -48,7 +48,7 @@ namespace LoginSystemPowerCode.Pages {
             try
             {
                 await authService.SendPasswordResetEmail(CurrentUser.Email);
-                await Application.Current.MainPage.DisplayAlert("Éxito", "Se ha enviado un correo para restablecer la contraseña.", "OK");
+                await Application.Current.MainPage.DisplayAlert("ï¿½xito", "Se ha enviado un correo para restablecer la contraseï¿½a.", "OK");
             }
             catch (Exception ex)
             {
@@ -59,8 +59,8 @@ namespace LoginSystemPowerCode.Pages {
 
         public void testing()
 		{
-            Juego lol = new Juego("League of legends", 20, "Descripción", 130, "logolol.png");
-            Juego mrivals = new Juego("Marvel Rivals", 40, "Descripción", 10, "avatarlogomarvelrivals.jpg");
+            Juego lol = new Juego("League of legends", 20, "Descripciï¿½n", 130, "logolol.png");
+            Juego mrivals = new Juego("Marvel Rivals", 40, "Descripciï¿½n", 10, "avatarlogomarvelrivals.jpg");
             ObservableCollection<Juego> listaJuegos = new ObservableCollection<Juego>();
             listaJuegos.Add(lol);
             listaJuegos.Add(mrivals);
@@ -74,7 +74,7 @@ namespace LoginSystemPowerCode.Pages {
             string nuevoNombre = await DisplayPromptAsync("Editar Nickname", "Introduce tu nuevo nickname:", "OK",
                                                   "Cancelar", "Nuevo nickname", maxLength: 20, keyboard: Keyboard.Text);
 
-            // Si el usuario presiona OK y no deja vacío el campo
+            // Si el usuario presiona OK y no deja vacï¿½o el campo
             if (!string.IsNullOrWhiteSpace(nuevoNombre))
             {
                 Usuario.Nickname = nuevoNombre;
@@ -87,7 +87,7 @@ namespace LoginSystemPowerCode.Pages {
             string nuevoNombre = await DisplayPromptAsync("Editar Nombre", "Introduce tu nuevo nombre:", "OK",
                                                   "Cancelar", "Nuevo nombre", maxLength: 20, keyboard: Keyboard.Text);
 
-            // Si el usuario presiona OK y no deja vacío el campo
+            // Si el usuario presiona OK y no deja vacï¿½o el campo
             if (!string.IsNullOrWhiteSpace(nuevoNombre))
             {
                 Usuario.Nombre = nuevoNombre;
@@ -106,7 +106,7 @@ namespace LoginSystemPowerCode.Pages {
             this.ShowPopup(popup); // Muestra el popup
         }
 
-        // Método para actualizar la imagen seleccionada
+        // Mï¿½todo para actualizar la imagen seleccionada
         public void UpdateProfileImage(string imagePath)
         {
             _usuario.Imagen = imagePath;

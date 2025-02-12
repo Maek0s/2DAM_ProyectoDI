@@ -23,6 +23,17 @@ namespace LoginSystemPowerCode.Pages {
             testing();
         }
 
+        protected override async void OnAppearing()
+        {
+            Debug.WriteLine("Método");
+            base.OnAppearing();
+            Debug.WriteLine("Método 2");
+            eUsername.Focus();
+            await Task.Delay(1000);  // Espera un poco antes de hacer el foco
+            eUsername.Focus();
+            Debug.WriteLine(eUsername.IsFocused);
+        }
+
         public void testing()
         {
             
