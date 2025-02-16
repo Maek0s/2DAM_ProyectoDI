@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LoginSystemPowerCode.Models;
+using LoginSystemPowerCode.Systems;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -15,34 +17,12 @@ namespace LoginSystemPowerCode.ViewModels
     {
         private Timer _timer;
         private int _imagenActual = 0;
+        private MgtDatabase _mgtDatabase = new MgtDatabase();
 
-        private readonly List<string> _imagenes = new()
-        {
-            "lol.jpg",
-            "marvelrivals.jpg",
-            "osu.jpg"
-        };
-
-        private readonly List<string> _titulos = new()
-        {
-            "League of Legends",
-            "Marvel Rivals",
-            "Osu"
-        };
-
-        private readonly List<string> _descripcion = new()
-        {
-            "League of Legends es un videojuego multijugador de arena de batalla.",
-            "Marvel Rivals es un videojuego de acción de disparos de héroes en tercera persona.",
-            "Osu es un juego fuertemente orientado a la comunidad, con todos los mapas de ritmos y canciones jugables."
-        };
-
-        private readonly List<string> _precios = new()
-        {
-            "20€",
-            "40€",
-            "5€"
-        };
+        private List<string> _imagenes = new();
+        private List<string> _titulos = new();
+        private List<string> _descripciones = new();
+        private List<string> _precios = new();
 
         // Propiedades Bindables
         private string _imagen;
@@ -110,10 +90,29 @@ namespace LoginSystemPowerCode.ViewModels
 
             NavegarPerfilCommand = new Command(viajarPerfil);
 
+            CargarJuegosDesdeBD();
+
             // Configurar el temporizador para cambiar la imagen cada 10 segundos
             _timer = new Timer(10000);
             _timer.Elapsed += OnTimerElapsed;
             _timer.Start();
+        }
+
+
+        private async void CargarJuegosDesdeBD()
+        {
+            List<Juego> juegos = _mgtDatabase.ObtenerTodosLosJuegos(); // Suponiendo que esta función existe en MgtDatabase
+
+            if (juegos.Any())
+            {
+                _imagenes = juegos.Select(j => j.Imagen).ToList();
+                _titulos = juegos.Select(j => j.Nombre).ToList();
+                _descripciones = juegos.Select(j => j.Descripcion).ToList();
+                _precios = juegos.Select(j => $"{j.Precio}€").ToList(); // Formateamos el precio con €
+
+                _imagenActual = 0;
+                ActualizarDatos();
+            }
         }
 
         private async void viajarPerfil()
@@ -130,9 +129,11 @@ namespace LoginSystemPowerCode.ViewModels
 
         private void ActualizarDatos()
         {
+            if (_imagenes.Count == 0) return;
+
             Imagen = _imagenes[_imagenActual];
             Titulo = _titulos[_imagenActual];
-            DescripcionTexto = _descripcion[_imagenActual];
+            DescripcionTexto = _descripciones[_imagenActual];
             Precio = _precios[_imagenActual];
         }
 

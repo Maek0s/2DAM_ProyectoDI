@@ -30,7 +30,7 @@
     <AppXManifest Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-02-16T20:35:15.102</Modified>
+      <Modified>2025-02-16T21:17:48.215</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginSystemPowerCode.dll">
       <PackagePath>LoginSystemPowerCode.dll</PackagePath>
-      <Modified>2025-02-16T20:35:14.186</Modified>
+      <Modified>2025-02-16T21:17:46.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>LoginSystemPowerCode.exe</PackagePath>
-      <Modified>2025-02-16T20:35:14.240</Modified>
+      <Modified>2025-02-16T21:17:46.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

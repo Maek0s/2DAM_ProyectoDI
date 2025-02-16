@@ -1,8 +1,0 @@
-CREATE TABLE IF NOT EXISTS Usuarios 
-(
-idUser int PRIMARY KEY,
-idFirebase VARCHAR(50) NOT NULL,
-nickname VARCHAR(20) NOT NULL,
-username VARCHAR(20) NOT NULL,
-imagen VARCHAR(20) NOT NULL
-)

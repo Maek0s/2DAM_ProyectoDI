@@ -31,12 +31,6 @@ namespace LoginSystemPowerCode.ViewModels
                     // Calculamos las horas jugadas totales y juegos
                     CalcularTotalHorasJugadas();
                     CalcularCantidadDeJuegos();
-
-                    // Ahora que el usuario ya se ha cargado, podemos verificar si es admin.
-                    if (_usuario != null)
-                    {
-                        Debug.WriteLine("ES ADMIN: " + _usuario.Admin);
-                    }
                 }
             }
         }
