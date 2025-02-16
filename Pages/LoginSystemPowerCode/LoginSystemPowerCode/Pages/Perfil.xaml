@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:LoginSystemPowerCode.ViewModels"
              x:Class="LoginSystemPowerCode.Pages.Perfil"
              Title=""
-             BackgroundColor="#A6E8EB">
+             BackgroundColor="#E7F2FF">
+
+    <!-- Establecer el ViewModel como BindingContext -->
+    <ContentPage.BindingContext>
+        <vm:PerfilViewModel />
+    </ContentPage.BindingContext>
+
     <ScrollView>
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Frame WidthRequest="700"
                    Margin="0"
                    HeightRequest="550"
-                   BackgroundColor="LightBlue"
+                   BackgroundColor="#B0D7FF"
                    BorderColor="Black"
                    VerticalOptions="Center"
                    HorizontalOptions="Center">
@@ -68,6 +75,7 @@
                             <HorizontalStackLayout>
                                 <Label x:Name="lblNickname"
                                        Text="{Binding Usuario.Nickname}"
+                                       FontFamily="Bahnschrift"
                                        FontSize="20"
                                        HorizontalOptions="Start"/>
 
@@ -88,6 +96,7 @@
                             <HorizontalStackLayout>
                                 <Label x:Name="lblNombre"
                                        Text="{Binding Usuario.Nombre}"
+                                       FontFamily="Bahnschrift"
                                        FontSize="16"
                                        HorizontalOptions="Start"/>
 
@@ -122,11 +131,17 @@
                             HorizontalOptions="Center"
                             VerticalOptions="Center">
                             <Label x:Name="lblSueldoActual"
-                                   Text="{Binding Usuario.Saldo, StringFormat='Saldo actual: {0} €'}"
-                                   FontSize="18"
-                                   FontFamily="Bahnschrift"                                 
-                                   VerticalOptions="Center"
-                                   HorizontalOptions="Center"/>
+                                    Text="{Binding Usuario.Saldo, StringFormat='Saldo actual: {0} €'}"
+                                    FontSize="18"
+                                    FontFamily="Bahnschrift"                                 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Usuario.Saldo}" Value="0">
+                                        <Setter Property="TextColor" Value="Red"/>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
                         </VerticalStackLayout>
                     </Frame>
 
@@ -139,6 +154,8 @@
 
                         <Button x:Name="btnCambiarPassword"
                                 Text="Cambiar contraseña"
+                                FontSize="15"
+                                FontFamily="Bahnschrift"
                                 Command="{Binding ResetPasswordCommand}"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Start"/>
@@ -161,16 +178,23 @@
 
                             <VerticalStackLayout Grid.Column="0">
                                 <Label Text="Cantidad juegos"
+                                       
                                        FontAttributes="Bold"/>
-                                <Label Text="{Binding Usuario.CantidadJuegos, StringFormat='{0} juegos'}"
+                                <Label Text="{Binding TotalJuegos, StringFormat='{0} {Binding TotalJuegos, Converter={StaticResource JuegoPluralConverter}}'}"
                                        HorizontalOptions="Start"
-                                       Margin="20,0,0,0"/>
+                                       Margin="20,0,0,0">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding TotalJuegos}" Value="1">
+                                            <Setter Property="Text" Value="{Binding TotalJuegos, StringFormat='{0} juego'}" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
                             </VerticalStackLayout>
 
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="Horas jugadas"
                                        FontAttributes="Bold"/>
-                                <Label Text="{Binding Usuario.HorasJugadasTotales, StringFormat='{0} horas'}"
+                                <Label Text="{Binding HorasJugadasTotales, StringFormat='{0} horas'}"
                                        Margin="15,0,0,0"/>
                             </VerticalStackLayout>
                         </Grid>

@@ -226,6 +226,15 @@
     <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconuser.scale-100.png">
       <PackagePath>iconuser.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\juegolol.scale-100.jpg">
+      <PackagePath>juegolol.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\juegomarvelrivals.scale-100.jpg">
+      <PackagePath>juegomarvelrivals.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\juegoosu.scale-100.jpg">
+      <PackagePath>juegoosu.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\2DAM_ProyectoDI\Pages\LoginSystemPowerCode\LoginSystemPowerCode\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logolol.scale-100.png">
       <PackagePath>logolol.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -250,29 +259,14 @@
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\communitytoolkit.maui.core\9.0.0\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
       <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\firebase.auth\1.0.0\lib\netstandard1.1\Firebase.Auth.dll">
-      <PackagePath>Firebase.Auth.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\entityframework\6.4.4\lib\netstandard2.1\EntityFramework.SqlServer.dll">
+      <PackagePath>EntityFramework.SqlServer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\firebaseadmin\3.1.0\lib\net6.0\FirebaseAdmin.dll">
-      <PackagePath>FirebaseAdmin.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\entityframework\6.4.4\lib\netstandard2.1\EntityFramework.dll">
+      <PackagePath>EntityFramework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\google.api.gax\4.8.0\lib\netstandard2.0\Google.Api.Gax.dll">
-      <PackagePath>Google.Api.Gax.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\google.api.gax.rest\4.8.0\lib\netstandard2.0\Google.Api.Gax.Rest.dll">
-      <PackagePath>Google.Api.Gax.Rest.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\google.apis\1.68.0\lib\net6.0\Google.Apis.dll">
-      <PackagePath>Google.Apis.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\google.apis.auth\1.68.0\lib\net6.0\Google.Apis.Auth.dll">
-      <PackagePath>Google.Apis.Auth.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\google.apis.core\1.68.0\lib\net6.0\Google.Apis.Core.dll">
-      <PackagePath>Google.Apis.Core.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll">
-      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.data.sqlite.core\9.0.2\lib\net8.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -328,8 +322,8 @@
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.1\lib\netstandard1.0\System.ServiceModel.dll">
-      <PackagePath>System.ServiceModel.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.win32.systemevents\4.7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -376,17 +370,47 @@
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\newtonsoft.json\13.0.3\lib\net6.0\Newtonsoft.Json.dll">
-      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\sqlite-net-pcl\1.9.172\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.codedom\7.0.0\lib\net7.0\System.CodeDom.dll">
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.10\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\sqlitepclraw.core\2.1.10\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.10\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.119\lib\netstandard2.1\System.Data.SQLite.dll">
+      <PackagePath>System.Data.SQLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.codedom\4.7.0\lib\netstandard2.0\System.CodeDom.dll">
       <PackagePath>System.CodeDom.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.management\7.0.2\runtimes\win\lib\net7.0\System.Management.dll">
-      <PackagePath>System.Management.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.configuration.configurationmanager\4.7.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.data.sqlclient\4.8.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll">
+      <PackagePath>System.Data.SqlClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.data.sqlite.ef6\1.0.119\lib\netstandard2.1\System.Data.SQLite.EF6.dll">
+      <PackagePath>System.Data.SQLite.EF6.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.drawing.common\4.7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.security.cryptography.protecteddata\4.7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.security.permissions\4.7.0\lib\netcoreapp3.0\System.Security.Permissions.dll">
+      <PackagePath>System.Security.Permissions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\system.windows.extensions\4.7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll">
+      <PackagePath>System.Windows.Extensions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -496,20 +520,14 @@
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\System.Private.CoreLib.ni.dll">
-      <PackagePath>System.Private.CoreLib.ni.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\runtime.win-x64.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-x64\native\sni.dll">
+      <PackagePath>sni.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\dbgshim.dll">
-      <PackagePath>dbgshim.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.10\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\mscorlib.ni.dll">
-      <PackagePath>mscorlib.ni.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\mscorrc.debug.dll">
-      <PackagePath>mscorrc.debug.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\runtime.win7-x64.microsoft.netcore.runtime.coreclr\1.0.2\runtimes\win7-x64\native\sos.dll">
-      <PackagePath>sos.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.119\runtimes\win-x64\native\SQLite.Interop.dll">
+      <PackagePath>SQLite.Interop.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maek0s\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

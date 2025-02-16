@@ -240,3 +240,6 @@ firebaseappcheckinterop-17.1.0.aar
 firebaseauth-23.1.0.aar
 CommunityToolkit.Maui.Core.dll
 CommunityToolkit.Maui.dll
+SQLitePCLRaw.batteries_v2.dll
+SQLitePCLRaw.lib.e_sqlite3.android.dll
+SQLitePCLRaw.lib.e_sqlite3.android.aar

@@ -15,7 +15,7 @@
     <MauiXaml Update="Pages\Perfil.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RegisterSystem.xaml">
+    <MauiXaml Update="Pages\RegisterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -58,11 +58,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = LoginSystemPowerCode.Pages
 build_metadata.AdditionalFiles.TargetPath = Pages\Perfil.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Perfil.xaml
 
-[E:/2DAM_ProyectoDI/Pages/LoginSystemPowerCode/LoginSystemPowerCode/RegisterSystem.xaml]
+[E:/2DAM_ProyectoDI/Pages/LoginSystemPowerCode/LoginSystemPowerCode/Pages/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = LoginSystemPowerCode.RegisterSystem.xaml
-build_metadata.AdditionalFiles.TargetPath = RegisterSystem.xaml
-build_metadata.AdditionalFiles.RelativePath = RegisterSystem.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginSystemPowerCode.Pages.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\RegisterPage.xaml
 
 [E:/2DAM_ProyectoDI/Pages/LoginSystemPowerCode/LoginSystemPowerCode/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

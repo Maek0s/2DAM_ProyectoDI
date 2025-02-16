@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -11,60 +12,118 @@ namespace LoginSystemPowerCode.Models
 {
     public class Usuario : INotifyPropertyChanged
     {
-        // Declaración de variables //
-        private String _nombre;
-        public String Nombre
-        {
-            get { return _nombre; }
-            set { _nombre = value; OnPropertyChanged(); }
-        }
-
-        private String _nickname;
-        public String Nickname
-        {
-            get { return _nickname; }
-            set { _nickname = value; OnPropertyChanged(); }
-        }
-
-        private String _correo;
-        public String Correo
-        {
-            get { return _correo; }
-            set { _correo = value; OnPropertyChanged(); }
-        }
-
-        private String _imagen;
-        public String Imagen
-        {
-            get { return _imagen; }
-            set { _imagen = value; OnPropertyChanged(); }
-        }
-
+        // Declaración de variables privadas
+        private int _id;
+        private string _correo;
+        private string _nickname;
+        private string _nombre;
+        private string _password;
+        private string _imagen;
         private int _saldo;
-        public int Saldo
+        private ObservableCollection<Juego> _listaJuegos;
+
+        public int Id
         {
-            get { return _saldo; }
-            set 
+            get { return _id; }
+            set
             {
-                _saldo = value;
-                OnPropertyChanged();
+                if (_id != value)
+                {
+                    _id = value;
+                    OnPropertyChanged(nameof(Id));
+                }
             }
         }
 
-        public int CantidadJuegos => ListaJuegos?.Count ?? 0;
-
-        public int HorasJugadasTotales => ListaJuegos?.Sum(j => j.HorasJugadas) ?? 0;
-
-        private ObservableCollection<Juego> _listaJuegos;
-        public ObservableCollection<Juego> ListaJuegos {
-            get { return _listaJuegos; } 
-            set 
+        public string Correo
+        {
+            get { return _correo; }
+            set
             {
-                _listaJuegos = value;
-                OnPropertyChanged();
-                OnPropertyChanged(nameof(CantidadJuegos));
-                OnPropertyChanged(nameof(HorasJugadasTotales));
-            } 
+                if (_correo != value)
+                {
+                    _correo = value;
+                    OnPropertyChanged(nameof(Correo));
+                }
+            }
+        }
+
+        public string Nickname
+        {
+            get { return _nickname; }
+            set
+            {
+                if (_nickname != value)
+                {
+                    _nickname = value;
+                    OnPropertyChanged(nameof(Nickname));
+                }
+            }
+        }
+
+        public string Nombre
+        {
+            get { return _nombre; }
+            set
+            {
+                if (_nombre != value)
+                {
+                    _nombre = value;
+                    OnPropertyChanged(nameof(Nombre));
+                }
+            }
+        }
+
+        public string Password
+        {
+            get { return _password; }
+            set
+            {
+                if (_password != value)
+                {
+                    _password = value;
+                    OnPropertyChanged(nameof(Password));
+                }
+            }
+        }
+
+        public string Imagen
+        {
+            get { return _imagen; }
+            set
+            {
+                if (_imagen != value)
+                {
+                    _imagen = value;
+                    OnPropertyChanged(nameof(Imagen));
+                }
+            }
+        }
+
+        public int Saldo
+        {
+            get { return _saldo; }
+            set
+            {
+                if (_saldo != value)
+                {
+                    _saldo = value;
+                    OnPropertyChanged(nameof(Saldo));
+                }
+            }
+        }
+
+        public ObservableCollection<Juego> ListaJuegos
+        {
+            get { return _listaJuegos; }
+            set
+            {
+                if (_listaJuegos != value)
+                {
+                    _listaJuegos = value;
+                    OnPropertyChanged(nameof(ListaJuegos));
+                }
+            }
         }
 
         // On Property Changed //
@@ -77,55 +136,26 @@ namespace LoginSystemPowerCode.Models
         // Constructores //
 
         /// <summary>
-        /// Constructor de la clase Usuario
+        /// Constructor de la clase Usuario sin imagen
         /// </summary>
-        /// <param name="nombre">Nombre del usuario</param>
-        /// <param name="nickname">Apellido del usuario</param>
-        /// <param name="correo">Correo del usuario</param>
-        /// <param name="imagen">Nombre de la imagen del usuario</param>
-
-        public Usuario(String nombre, String nickname, String correo, String imagen, int saldo)
+        /// <param name="nombre"></param>
+        /// <param name="nickname"></param>
+        /// <param name="correo"></param>
+        /// <param name="password"></param>
+        /// <param name="saldo"></param>
+        /// <param name="listaJuegos"></param>
+        public Usuario(String nombre, String nickname, String correo, String password, int saldo, ObservableCollection<Juego> listaJuegos)
         {
             Nombre = nombre;
             Nickname = nickname;
             Correo = correo;
-            Imagen = imagen;
-            Saldo = saldo;
-        }
-
-        /// <summary>
-        /// Constructor de la clase Usuario
-        /// </summary>
-        /// <param name="nombre">Nombre del usuario</param>
-        /// <param name="nickname">Nickname del usuario</param>
-        /// <param name="correo">Correo del usuario</param>
-
-        public Usuario(String nombre, String nickname, String correo)
-        {
-            Nombre = nombre;
-            Nickname = nickname;
-            Correo = correo;
-            ListaJuegos = new ObservableCollection<Juego>();
+            Password = password;
             Imagen = "avatarlogopowercode.png";
-            Saldo = 0;
-        }
-
-        public Usuario(String nombre, String nickname, String correo, ObservableCollection<Juego> listaJuegos, String imagen, int saldo)
-        {
-            Nombre = nombre;
-            Nickname = nickname;
-            Correo = correo;
-            ListaJuegos = listaJuegos;
-            Imagen = imagen;
             Saldo = saldo;
-            /* Elegir random entre todas
-             * 
-             * Imagen = ;
-            */
         }
 
         /// <summary>
-        /// Constructor vacío de la clase Usuario
+        /// Constructor de la clase Usuario vacío
         /// </summary>
         public Usuario()
         {

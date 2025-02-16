@@ -12,6 +12,13 @@ namespace LoginSystemPowerCode.Models
     {
         // Declaración de variables //
 
+        private int id;
+        public int Id
+        {
+            get { return id; }
+            set { id = value; OnPropertyChanged(); }
+        }
+
         private String _nombre;
         public String Nombre
         {
@@ -40,7 +47,7 @@ namespace LoginSystemPowerCode.Models
             set { _imagen = value; OnPropertyChanged(); }
         }
 
-        public int _horasJugadas;
+        private int _horasJugadas;
         public int HorasJugadas
         {
             get { return _horasJugadas; }
@@ -65,12 +72,11 @@ namespace LoginSystemPowerCode.Models
         /// <param name="descripcion"></param>
         /// <param name="horasJugadas"></param>
         /// <param name="imagen"></param>
-        public Juego(String nombre, int precio, String descripcion, int horasJugadas, String imagen)
+        public Juego(String nombre, int precio, String descripcion, String imagen)
         {
             Nombre = nombre;
             Precio = precio;
             Descripcion = descripcion;
-            HorasJugadas = horasJugadas;
             Imagen = imagen;
         }
 
@@ -79,14 +85,6 @@ namespace LoginSystemPowerCode.Models
         /// </summary>
         public Juego()
         {
-        }
-
-        /// <summary>
-        /// Método de prueba
-        /// </summary>
-        public void prueba()
-        {
-            Console.WriteLine("Prueba");
         }
     }
 }

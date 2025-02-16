@@ -71,13 +71,9 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Firebase.Auth": {
+            "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "FirebaseAdmin": {
-              "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -96,6 +92,18 @@
               "target": "Package",
               "version": "[8.0.12, )",
               "autoReferenced": true
+            },
+            "SQLitePCLRaw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -126,13 +134,9 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Firebase.Auth": {
+            "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "FirebaseAdmin": {
-              "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -151,6 +155,18 @@
               "target": "Package",
               "version": "[8.0.12, )",
               "autoReferenced": true
+            },
+            "SQLitePCLRaw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -181,13 +197,9 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Firebase.Auth": {
+            "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "FirebaseAdmin": {
-              "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -206,6 +218,18 @@
               "target": "Package",
               "version": "[8.0.12, )",
               "autoReferenced": true
+            },
+            "SQLitePCLRaw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -237,13 +261,9 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Firebase.Auth": {
+            "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "FirebaseAdmin": {
-              "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -256,6 +276,18 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.100, )"
+            },
+            "SQLitePCLRaw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:vm="clr-namespace:LoginSystemPowerCode.ViewModels"
             x:Class="LoginSystemPowerCode.Pages.LoginPage"
-            BackgroundColor="#C9FDFF">
+            BackgroundColor="#E7F2FF">
+
+    <!-- Establecer el ViewModel como BindingContext -->
+    <ContentPage.BindingContext>
+        <vm:LoginPageViewModel />
+    </ContentPage.BindingContext>
 
     <ScrollView HorizontalOptions="Center"
             VerticalOptions="Center">
         <VerticalStackLayout HorizontalOptions="FillAndExpand"
                             VerticalOptions="FillAndExpand">
-            <Frame BackgroundColor="LightBlue"
+            <Frame BackgroundColor="#B0D7FF"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"    
                 Padding="20">
@@ -19,9 +25,10 @@
                         Margin="50,0,50,40"
                         FontSize="Large"/>
 
-                    <Label Text=""
-                        x:Name="lblErrors"
-                        TextColor="Red"/>
+                    <Label Text="{Binding ErrorMessage}" 
+                           TextColor="Red" 
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
 
                     <!-- Grid con el icono y Entry -->
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto">
@@ -35,11 +42,12 @@
 
                         <!-- Entry a la derecha -->
                         <Entry x:Name="eUsername"
-                            TextColor="Black"
-                            PlaceholderColor="Black"
-                            Placeholder="Username"
-                            Grid.Column="1" 
-                            VerticalOptions="Center" />
+                               Text="{Binding Username}"
+                               TextColor="Black"
+                               PlaceholderColor="Black"
+                               Placeholder="Username"
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
                     </Grid>
 
                     <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto">
@@ -53,17 +61,18 @@
 
                         <!-- Entry a la derecha -->
                         <Entry x:Name="ePassword"
-                            Placeholder="Password"
-                            TextColor="Black"
-                            PlaceholderColor="Black"
-                            IsPassword="True"
-                            Grid.Column="1" 
-                            VerticalOptions="Center" />
+                               Text="{Binding Password}"
+                               Placeholder="Password"
+                               TextColor="Black"
+                               PlaceholderColor="Black"
+                               IsPassword="True"
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
                     </Grid>
 
                     <Button Text="Login"
                         BackgroundColor="Blue"
-                        Clicked="OnLoginButtonClicked"/>
+                        Command="{Binding LoginCommand}"/>
                     <Label Text="Crear cuenta"
                         HorizontalOptions="Center">
                         <Label.GestureRecognizers>
