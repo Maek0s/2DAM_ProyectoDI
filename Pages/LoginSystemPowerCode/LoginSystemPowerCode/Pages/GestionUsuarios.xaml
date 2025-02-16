@@ -1,0 +1,100 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:LoginSystemPowerCode.ViewModels"
+             x:Class="LoginSystemPowerCode.Pages.GestionUsuarios"
+             Title="Gestión de Usuarios">
+
+    <ContentPage.BindingContext>
+        <vm:GestionUsuariosViewModel />
+    </ContentPage.BindingContext>
+
+    <!-- Tres columnas: 
+         Columna 0: Lista de usuarios (no centrada, con scroll)
+         Columna 1: Panel de edición (visible al seleccionar un usuario)
+         Columna 2: Menú lateral derecho -->
+    <Grid ColumnDefinitions="3*, 3*, Auto" Padding="10">
+
+        <!-- Lista de Usuarios (Columna 0) -->
+        <ScrollView Grid.Column="0" VerticalOptions="FillAndExpand" Margin="0,0,10,0">
+            <CollectionView ItemsSource="{Binding Usuarios}" SelectionMode="Single"
+                    SelectedItem="{Binding UsuarioSeleccionado}"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Black" Padding="10" Margin="5" CornerRadius="10">
+                            <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                                <!-- ID del usuario -->
+                                <Label Text="{Binding Id}" FontSize="16" FontAttributes="Bold" 
+                               VerticalOptions="Center"/>
+                                <!-- Imagen del usuario -->
+                                <Image WidthRequest="40" HeightRequest="40" Aspect="AspectFill" Source="{Binding Imagen}">
+                                    <Image.Clip>
+                                        <EllipseGeometry Center="20,20" RadiusX="20" RadiusY="20"/>
+                                    </Image.Clip>
+                                </Image>
+                                <!-- Datos del usuario -->
+                                <VerticalStackLayout VerticalOptions="Center">
+                                    <Label Text="{Binding Correo}" FontSize="14" TextColor="Gray"/>
+                                    <Label Text="{Binding Nickname}" FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Saldo, StringFormat='{0} €'}" FontSize="14" TextColor="Green"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+        <!-- Panel de Edición (Columna 1) -->
+        <Frame Grid.Column="1" Padding="20" BackgroundColor="WhiteSmoke" CornerRadius="10"
+               IsVisible="{Binding UsuarioSeleccionado}">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Editar Usuario" FontSize="20" FontAttributes="Bold" />
+                <!-- ID (No modificable) -->
+                <Label Text="ID" FontSize="14" TextColor="Gray"/>
+                <Entry Text="{Binding UsuarioSeleccionado.Id}" IsEnabled="False"/>
+                <!-- Correo (No modificable) -->
+                <Label Text="Correo" FontSize="14" TextColor="Gray"/>
+                <Entry Text="{Binding UsuarioSeleccionado.Correo}" IsEnabled="False"/>
+                <!-- Nickname -->
+                <Label Text="Nickname" FontSize="14"/>
+                <Entry Text="{Binding UsuarioSeleccionado.Nickname}" Placeholder="Nickname"/>
+                <!-- Username -->
+                <Label Text="Username" FontSize="14"/>
+                <Entry Text="{Binding UsuarioSeleccionado.Nombre}" Placeholder="Username"/>
+                <!-- Saldo -->
+                <Label Text="Saldo (€)" FontSize="14"/>
+                <Entry Text="{Binding UsuarioSeleccionado.Saldo}" Placeholder="Saldo" Keyboard="Numeric"/>
+                <Button Text="Guardar Cambios" Command="{Binding GuardarCambiosCommand}" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Menú lateral derecho (Columna 2) -->
+        <Frame Grid.Column="2" BorderColor="Black" CornerRadius="10" Padding="10" Margin="10" WidthRequest="140">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
+                    <Image Source="home.png" HeightRequest="30" WidthRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavegarPrincipalCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Principal" WidthRequest="60"/>
+                    <Image Source="user.png" HeightRequest="30" WidthRequest="40"/>
+                    <Label Text="Perfil" WidthRequest="40" VerticalOptions="Center"/>
+                    <Image Source="wallet.png" HeightRequest="30" WidthRequest="40"/>
+                    <Label Text="Saldo" WidthRequest="40" VerticalOptions="Center"/>
+                    <Image Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavegarGestionUsersCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Biblioteca" WidthRequest="65" HeightRequest="65"/>
+                    <Image Source="logout.png" HeightRequest="30"/>
+                    <Label Text="Salida" WidthRequest="50"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>

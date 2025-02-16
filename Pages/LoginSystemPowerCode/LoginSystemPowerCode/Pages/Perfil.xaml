@@ -180,17 +180,22 @@
 
                                 <VerticalStackLayout Grid.Column="0">
                                     <Label Text="Cantidad juegos"
-                                       
                                            FontAttributes="Bold"/>
-                                    <Label Text="{Binding TotalJuegos, StringFormat='{0} {Binding TotalJuegos, Converter={StaticResource JuegoPluralConverter}}'}"
-                                           HorizontalOptions="Start"
-                                           Margin="20,0,0,0">
-                                        <Label.Triggers>
-                                            <DataTrigger TargetType="Label" Binding="{Binding TotalJuegos}" Value="1">
-                                                <Setter Property="Text" Value="{Binding TotalJuegos, StringFormat='{0} juego'}" />
-                                            </DataTrigger>
-                                        </Label.Triggers>
+                                    <Label HorizontalOptions="Start" Margin="20,0,0,0">
+                                        <Label.Style>
+                                            <Style TargetType="Label">
+                                                <!-- Valor por defecto: plural -->
+                                                <Setter Property="Text" Value="{Binding TotalJuegos, StringFormat='{0} juegos'}"/>
+                                                <Style.Triggers>
+                                                    <!-- Si TotalJuegos es 1, muestra "1 juego" -->
+                                                    <DataTrigger TargetType="Label" Binding="{Binding TotalJuegos}" Value="1">
+                                                        <Setter Property="Text" Value="{Binding TotalJuegos, StringFormat='{0} juego'}"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Label.Style>
                                     </Label>
+
                                 </VerticalStackLayout>
 
                                 <VerticalStackLayout Grid.Column="1">
@@ -268,30 +273,59 @@
         </ScrollView>
 
         <!-- Menú lateral derecho -->
-        <Frame BorderColor="Black" CornerRadius="10" Padding="10" Margin="10" WidthRequest="140" Grid.Column="1">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
-                    <Image Source="home.png" HeightRequest="30" WidthRequest="40">
+        <Frame BorderColor="Black"
+               CornerRadius="10"
+               Padding="10"
+               Margin="10"
+               WidthRequest="140"
+               HeightRequest="600"
+               Grid.Column="1"
+               VerticalOptions="Center">
+
+            <StackLayout Orientation="Vertical"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 Spacing="20">
+
+                <Image Source="home.png" HeightRequest="30" WidthRequest="40">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavegarPrincipalCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Principal" WidthRequest="60"/>
+
+                <Image Source="user.png" HeightRequest="30" WidthRequest="40"/>
+                <Label Text="Perfil" WidthRequest="40" VerticalOptions="Center"/>
+
+                <Image Source="wallet.png" HeightRequest="30" WidthRequest="40">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavegarSaldoCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Saldo" WidthRequest="40" VerticalOptions="Center"/>
+
+                <Image Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100"
+               IsVisible="{Binding Usuario.Admin}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavegarGestionUsersCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Usuarios" WidthRequest="65" HeightRequest="65" IsVisible="{Binding Usuario.Admin}"/>
+
+                <!-- Empujar el botón de salida al fondo -->
+                <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+                    <Image Source="logout.png" HeightRequest="30">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding NavegarPrincipalCommand}"/>
+                            <TapGestureRecognizer Command="{Binding NavegarLogOutCommand}"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="Principal" WidthRequest="60"/>
-
-                    <Image Source="user.png" HeightRequest="30" WidthRequest="40"/>
-                    <Label Text="Perfil" WidthRequest="40" VerticalOptions="Center"/>
-
-                    <Image Source="wallet.png" HeightRequest="30" WidthRequest="40"/>
-                    <Label Text="Saldo" WidthRequest="40" VerticalOptions="Center"/>
-
-                    <Image Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100"/>
-                    <Label Text="Biblioteca" WidthRequest="65" HeightRequest="65"/>
-
-                    <Image Source="logout.png" HeightRequest="30"/>
                     <Label Text="Salida" WidthRequest="50"/>
                 </StackLayout>
+
             </StackLayout>
         </Frame>
+
+
 
     </Grid>
 </ContentPage>

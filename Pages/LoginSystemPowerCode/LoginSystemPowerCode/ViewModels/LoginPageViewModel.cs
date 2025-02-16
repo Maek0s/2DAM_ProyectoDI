@@ -25,7 +25,6 @@ namespace LoginSystemPowerCode.ViewModels
 
         public LoginPageViewModel()
         {
-            Debug.WriteLine("LoginPageViewModel");
             Username = "maek0spam@gmail.com";
             Password = "123";
 
@@ -66,16 +65,13 @@ namespace LoginSystemPowerCode.ViewModels
 
         private async void OnLoginClicked()
         {
-            Debug.WriteLine("Clicked Login");
             ErrorMessage = mgtDatabase.IniciarSesion(Username, Password);
 
-            if (ErrorMessage.Equals("Inicio de sesión exitoso."))
+            if (ErrorMessage.Equals(""))
             {
                 Usuario usuario = mgtDatabase.ObtenerUsuarioPorCorreo(Username);
-                Debug.WriteLine("Viajando a Perfil...");
                 
                 await Shell.Current.GoToAsync($"/Perfil?usuario={usuario.Id}");
-                //await Navigation.PushAsync(new Perfil(usuario.Id));
             }
         }
 

@@ -31,6 +31,12 @@ namespace LoginSystemPowerCode.ViewModels
                     // Calculamos las horas jugadas totales y juegos
                     CalcularTotalHorasJugadas();
                     CalcularCantidadDeJuegos();
+
+                    // Ahora que el usuario ya se ha cargado, podemos verificar si es admin.
+                    if (_usuario != null)
+                    {
+                        Debug.WriteLine("ES ADMIN: " + _usuario.Admin);
+                    }
                 }
             }
         }
@@ -77,6 +83,9 @@ namespace LoginSystemPowerCode.ViewModels
         // MENU //
 
         public ICommand NavegarPrincipalCommand { get; }
+        public ICommand NavegarSaldoCommand { get; }
+        public ICommand NavegarGestionUsersCommand { get; }
+        public ICommand NavegarLogOutCommand { get; }
 
         public PerfilViewModel(Page page)
         {
@@ -87,13 +96,25 @@ namespace LoginSystemPowerCode.ViewModels
             ChangeNombreCommand = new Command(ChangeNombre);
             ChangeProfileImageCommand = new Command<string>(UpdateProfileImage);
 
+
             // MENU //
-            NavegarPrincipalCommand = new Command(async () => await NavegarA("PaginaPrincipal"));
+            NavegarPrincipalCommand = new Command(async () => await NavegarID("PaginaPrincipal"));
+
+            // CAMBIAR A SALDO
+            NavegarSaldoCommand = new Command(async () => await NavegarA("LoginPage"));
+
+            NavegarGestionUsersCommand = new Command(async () => await NavegarID("GestionUsuarios"));
+            NavegarLogOutCommand = new Command(async () => await NavegarA("LoginPage"));
+        }
+
+        private async Task NavegarID(string pagina)
+        {
+            await Shell.Current.GoToAsync($"/{pagina}?usuario={UsuarioID}");
         }
 
         private async Task NavegarA(string pagina)
         {
-            await Shell.Current.GoToAsync($"/{pagina}?usuario={UsuarioID}");
+            await Shell.Current.GoToAsync($"/{pagina}");
         }
 
         public PerfilViewModel()

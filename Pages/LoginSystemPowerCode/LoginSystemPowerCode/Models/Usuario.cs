@@ -21,6 +21,7 @@ namespace LoginSystemPowerCode.Models
         private string _imagen;
         private int _saldo;
         private ObservableCollection<Juego> _listaJuegos;
+        private bool _admin;
 
         public int Id
         {
@@ -126,6 +127,19 @@ namespace LoginSystemPowerCode.Models
             }
         }
 
+        public bool Admin
+        {
+            get { return _admin; }
+            set
+            {
+                if (_admin != value)
+                {
+                    _admin = value;
+                    OnPropertyChanged(nameof(Admin));
+                }
+            }
+        }
+
         // On Property Changed //
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -144,7 +158,7 @@ namespace LoginSystemPowerCode.Models
         /// <param name="password"></param>
         /// <param name="saldo"></param>
         /// <param name="listaJuegos"></param>
-        public Usuario(String nombre, String nickname, String correo, String password, int saldo, ObservableCollection<Juego> listaJuegos)
+        public Usuario(String nombre, String nickname, String correo, String password, int saldo, ObservableCollection<Juego> listaJuegos, bool admin)
         {
             Nombre = nombre;
             Nickname = nickname;
@@ -152,6 +166,7 @@ namespace LoginSystemPowerCode.Models
             Password = password;
             Imagen = "avatarlogopowercode.png";
             Saldo = saldo;
+            Admin = admin;
         }
 
         /// <summary>

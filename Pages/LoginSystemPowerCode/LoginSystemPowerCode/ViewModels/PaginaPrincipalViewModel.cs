@@ -39,9 +39,9 @@ namespace LoginSystemPowerCode.ViewModels
 
         private readonly List<string> _precios = new()
         {
-            "Precio: 20€",
-            "Precio: 40€",
-            "Precio: 5€"
+            "20€",
+            "40€",
+            "5€"
         };
 
         // Propiedades Bindables

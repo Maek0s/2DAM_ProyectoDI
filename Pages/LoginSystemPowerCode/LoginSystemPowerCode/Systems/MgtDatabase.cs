@@ -14,7 +14,7 @@ namespace LoginSystemPowerCode.Systems
 
         public void testing()
         {
-            InsertarUsuario("maek0spam@gmail.com", "maek0spam", "maek0spam", "1234", "avatarlogopowercode.png");
+            //InsertarUsuario("maek0spam@gmail.com", "maek0spam", "maek0spam", "1234", "avatarlogopowercode.png");
         }
 
         private void CreacionTablas()
@@ -22,6 +22,8 @@ namespace LoginSystemPowerCode.Systems
             CrearTablaUsuario();
             CrearTablaJuegos();
             CrearTablaUsuariosJuegos();
+            CrearTablaRoles();
+            CrearTablaUsuariosRoles();
         }
 
         public string IniciarSesion(string correo, string password)
@@ -45,7 +47,7 @@ namespace LoginSystemPowerCode.Systems
                     {
                         // Si se encuentra una coincidencia, el inicio de sesión es exitoso
                         connection.Close();
-                        return "Inicio de sesión exitoso.";
+                        return "";
                     }
                     else
                     {
@@ -64,20 +66,19 @@ namespace LoginSystemPowerCode.Systems
             {
                 connection.Open();
 
-                // Check if the email already exists
+                // Verificar si el correo ya existe
                 string checkQuery = "SELECT COUNT(*) FROM usuarios WHERE correo = @correo";
                 using (SQLiteCommand checkCommand = new SQLiteCommand(checkQuery, connection))
                 {
                     checkCommand.Parameters.AddWithValue("@correo", correo);
                     long count = (long)checkCommand.ExecuteScalar();
-
                     if (count > 0)
                     {
                         return $"El correo {correo} ya está registrado.";
                     }
                 }
 
-                // Creamos la consulta de inserción
+                // Consulta de inserción en usuarios
                 string query = "INSERT INTO usuarios (correo, nickname, username, password, imagen, saldo) " +
                                "VALUES (@correo, @nickname, @username, @password, @imagen, 10);";
 
@@ -87,15 +88,24 @@ namespace LoginSystemPowerCode.Systems
 
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
-                    // Usamos parámetros para evitar inyecciones SQL
                     command.Parameters.AddWithValue("@correo", correo);
                     command.Parameters.AddWithValue("@nickname", nickname);
                     command.Parameters.AddWithValue("@username", username);
                     command.Parameters.AddWithValue("@password", password);
                     command.Parameters.AddWithValue("@imagen", imagen);
-
-                    // Ejecutamos el comando
                     command.ExecuteNonQuery();
+                }
+
+                // Obtener el id del nuevo usuario
+                long newUserId = connection.LastInsertRowId;
+
+                // Insertar en la tabla de relación con rol por defecto (id_rol = 1)
+                string insertRoleQuery = "INSERT INTO usuarios_roles (id_usuario, id_rol) VALUES (@id_usuario, @id_rol);";
+                using (SQLiteCommand roleCommand = new SQLiteCommand(insertRoleQuery, connection))
+                {
+                    roleCommand.Parameters.AddWithValue("@id_usuario", newUserId);
+                    roleCommand.Parameters.AddWithValue("@id_rol", 1);
+                    roleCommand.ExecuteNonQuery();
                 }
 
                 connection.Close();
@@ -114,13 +124,14 @@ namespace LoginSystemPowerCode.Systems
             {
                 connection.Open();
 
-                // Consulta para obtener la información del usuario por ID
+                // Consulta para obtener la información del usuario y sus juegos
                 string query = @"
-                        SELECT u.idUser, u.correo, u.nickname, u.username, u.password, u.imagen, u.saldo, j.id, j.titulo, uj.horas, uj.imagen AS juego_imagen
-                        FROM usuarios u
-                        LEFT JOIN usuarios_juegos uj ON u.idUser = uj.usuario_id
-                        LEFT JOIN juegos j ON uj.juego_id = j.id
-                        WHERE u.idUser = @idUser";
+            SELECT u.idUser, u.correo, u.nickname, u.username, u.password, u.imagen, u.saldo, 
+                   j.id AS juegoId, j.titulo, uj.horas, uj.imagen AS juego_imagen
+            FROM usuarios u
+            LEFT JOIN usuarios_juegos uj ON u.idUser = uj.usuario_id
+            LEFT JOIN juegos j ON uj.juego_id = j.id
+            WHERE u.idUser = @idUser";
 
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
@@ -130,7 +141,6 @@ namespace LoginSystemPowerCode.Systems
                     {
                         if (reader.Read())
                         {
-                            // Crear el usuario
                             usuario = new Usuario
                             {
                                 Id = reader.GetInt32(reader.GetOrdinal("idUser")),
@@ -139,17 +149,17 @@ namespace LoginSystemPowerCode.Systems
                                 Nombre = reader.GetString(reader.GetOrdinal("username")),
                                 Password = reader.GetString(reader.GetOrdinal("password")),
                                 Imagen = reader.GetString(reader.GetOrdinal("imagen")),
-                                Saldo = reader.GetInt32(reader.GetOrdinal("saldo"))
+                                Saldo = reader.GetInt32(reader.GetOrdinal("saldo")),
+                                Admin = false // Valor por defecto
                             };
 
-                            // Obtener juegos asociados al usuario
                             do
                             {
-                                if (!reader.IsDBNull(reader.GetOrdinal("id")))
+                                if (!reader.IsDBNull(reader.GetOrdinal("juegoId")))
                                 {
                                     listaJuegos.Add(new Juego
                                     {
-                                        Id = reader.GetInt32(reader.GetOrdinal("id")),
+                                        Id = reader.GetInt32(reader.GetOrdinal("juegoId")),
                                         Nombre = reader.GetString(reader.GetOrdinal("titulo")),
                                         Precio = reader.IsDBNull(reader.GetOrdinal("precio")) ? 0 : reader.GetInt32(reader.GetOrdinal("precio")),
                                         Descripcion = reader.IsDBNull(reader.GetOrdinal("descripcion")) ? "" : reader.GetString(reader.GetOrdinal("descripcion")),
@@ -159,8 +169,33 @@ namespace LoginSystemPowerCode.Systems
                                 }
                             } while (reader.Read());
 
-                            // Asignar la lista de juegos al usuario
                             usuario.ListaJuegos = listaJuegos;
+                        }
+                    }
+                }
+
+                // Verificar si el usuario es admin consultando la tabla usuarios_roles
+                if (usuario != null)
+                {
+                    string rolesQuery = "SELECT id_rol FROM usuarios_roles WHERE id_usuario = @usuario_id";
+                    using (SQLiteCommand rolesCommand = new SQLiteCommand(rolesQuery, connection))
+                    {
+                        rolesCommand.Parameters.AddWithValue("@usuario_id", idUser);
+                        using (SQLiteDataReader rolesReader = rolesCommand.ExecuteReader())
+                        {
+                            while (rolesReader.Read())
+                            {
+                                int role = rolesReader.GetInt32(rolesReader.GetOrdinal("id_rol"));
+                                if (role == 2)
+                                {
+                                    usuario.Admin = true;
+                                    break;
+                                } else
+                                {
+                                    usuario.Admin = false;
+                                    break;
+                                }
+                            }
                         }
                     }
                 }
@@ -170,6 +205,7 @@ namespace LoginSystemPowerCode.Systems
 
             return usuario;
         }
+
 
         public Usuario ObtenerUsuarioPorCorreo(string correo)
         {
@@ -180,13 +216,14 @@ namespace LoginSystemPowerCode.Systems
             {
                 connection.Open();
 
-                // Consulta para obtener la información del usuario
+                // Consulta para obtener la información del usuario y sus juegos
                 string query = @"
-                                SELECT u.idUser, u.correo, u.nickname, u.username, u.password, u.imagen, u.saldo, j.id, j.titulo, uj.horas, uj.imagen AS juego_imagen
-                                FROM usuarios u
-                                LEFT JOIN usuarios_juegos uj ON u.idUser = uj.usuario_id
-                                LEFT JOIN juegos j ON uj.juego_id = j.id
-                                WHERE u.correo = @correo";
+            SELECT u.idUser, u.correo, u.nickname, u.username, u.password, u.imagen, u.saldo, 
+                   j.id AS juegoId, j.titulo, uj.horas, uj.imagen AS juego_imagen
+            FROM usuarios u
+            LEFT JOIN usuarios_juegos uj ON u.idUser = uj.usuario_id
+            LEFT JOIN juegos j ON uj.juego_id = j.id
+            WHERE u.correo = @correo";
 
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
@@ -196,7 +233,6 @@ namespace LoginSystemPowerCode.Systems
                     {
                         if (reader.Read())
                         {
-                            // Crear el usuario
                             usuario = new Usuario
                             {
                                 Id = reader.GetInt32(reader.GetOrdinal("idUser")),
@@ -205,17 +241,17 @@ namespace LoginSystemPowerCode.Systems
                                 Nombre = reader.GetString(reader.GetOrdinal("username")),
                                 Password = reader.GetString(reader.GetOrdinal("password")),
                                 Imagen = reader.GetString(reader.GetOrdinal("imagen")),
-                                Saldo = reader.GetInt32(reader.GetOrdinal("saldo"))
+                                Saldo = reader.GetInt32(reader.GetOrdinal("saldo")),
+                                Admin = false // Valor por defecto
                             };
 
-                            // Obtener juegos asociados al usuario
                             do
                             {
-                                if (!reader.IsDBNull(reader.GetOrdinal("id")))
+                                if (!reader.IsDBNull(reader.GetOrdinal("juegoId")))
                                 {
                                     listaJuegos.Add(new Juego
                                     {
-                                        Id = reader.GetInt32(reader.GetOrdinal("id")),
+                                        Id = reader.GetInt32(reader.GetOrdinal("juegoId")),
                                         Nombre = reader.GetString(reader.GetOrdinal("titulo")),
                                         Precio = reader.IsDBNull(reader.GetOrdinal("precio")) ? 0 : reader.GetInt32(reader.GetOrdinal("precio")),
                                         Descripcion = reader.IsDBNull(reader.GetOrdinal("descripcion")) ? "" : reader.GetString(reader.GetOrdinal("descripcion")),
@@ -225,8 +261,33 @@ namespace LoginSystemPowerCode.Systems
                                 }
                             } while (reader.Read());
 
-                            // Asignar la lista de juegos al usuario
                             usuario.ListaJuegos = listaJuegos;
+                        }
+                    }
+                }
+
+                // Verificar si el usuario es admin consultando la tabla usuarios_roles
+                if (usuario != null)
+                {
+                    string rolesQuery = "SELECT id_rol FROM usuarios_roles WHERE id_usuario = @usuario_id";
+                    using (SQLiteCommand rolesCommand = new SQLiteCommand(rolesQuery, connection))
+                    {
+                        rolesCommand.Parameters.AddWithValue("@usuario_id", usuario.Id);
+                        using (SQLiteDataReader rolesReader = rolesCommand.ExecuteReader())
+                        {
+                            while (rolesReader.Read())
+                            {
+                                int role = rolesReader.GetInt32(rolesReader.GetOrdinal("id_rol"));
+                                if (role == 2)
+                                {
+                                    usuario.Admin = true;
+                                    break;
+                                } else
+                                {
+                                    usuario.Admin = false;
+                                    break;
+                                }
+                            }
                         }
                     }
                 }
@@ -237,7 +298,8 @@ namespace LoginSystemPowerCode.Systems
             return usuario;
         }
 
-       /* Métodos para actualizar datos */
+
+        /* Métodos para actualizar datos */
 
         // Método para actualizar la imagen de usuario
         public void ActualizarImagenUsuario(int usuarioId, string nuevaImagen)
@@ -387,6 +449,43 @@ namespace LoginSystemPowerCode.Systems
             }
         }
 
+        private void CrearTablaRoles()
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
+            {
+                connection.Open();
+                string query = "CREATE TABLE IF NOT EXISTS roles (" +
+                               "id_rol INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                               "nombre TEXT NOT NULL" +
+                               ");";
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    command.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
+        private void CrearTablaUsuariosRoles()
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
+            {
+                connection.Open();
+                string query = "CREATE TABLE IF NOT EXISTS usuarios_roles (" +
+                               "id_usuario INTEGER, " +
+                               "id_rol INTEGER, " +
+                               "PRIMARY KEY(id_usuario, id_rol), " +
+                               "FOREIGN KEY(id_usuario) REFERENCES usuarios(idUser), " +
+                               "FOREIGN KEY(id_rol) REFERENCES roles(id_rol)" +
+                               ");";
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    command.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
         public String sacarConnection()
         {
             string rutaDirectorioApp = System.AppContext.BaseDirectory;
@@ -408,7 +507,7 @@ namespace LoginSystemPowerCode.Systems
             return connectionString;
         }
 
-        private void ejecutarQuery(string query)
+        public void ejecutarQuery(string query)
         {
             using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
             {
