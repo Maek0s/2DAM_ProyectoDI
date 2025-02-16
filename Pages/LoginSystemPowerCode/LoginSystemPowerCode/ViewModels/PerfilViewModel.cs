@@ -66,8 +66,6 @@ namespace LoginSystemPowerCode.ViewModels
                 _usuarioID = value;
                 CargarUsuario();
                 Usuario = _mgtDatabase.ObtenerUsuarioPorId(int.Parse(value));
-                //Debug.WriteLine("UsuarioID: " + value);
-                //Debug.WriteLine("Usuario: " + Usuario);
             }
         }
 
@@ -75,6 +73,10 @@ namespace LoginSystemPowerCode.ViewModels
         public ICommand ChangeNicknameCommand { get; }
         public ICommand ChangeNombreCommand { get; }
         public ICommand ChangeProfileImageCommand { get; }
+
+        // MENU //
+
+        public ICommand NavegarPrincipalCommand { get; }
 
         public PerfilViewModel(Page page)
         {
@@ -84,6 +86,14 @@ namespace LoginSystemPowerCode.ViewModels
             ChangeNicknameCommand = new Command(ChangeNickname);
             ChangeNombreCommand = new Command(ChangeNombre);
             ChangeProfileImageCommand = new Command<string>(UpdateProfileImage);
+
+            // MENU //
+            NavegarPrincipalCommand = new Command(async () => await NavegarA("PaginaPrincipal"));
+        }
+
+        private async Task NavegarA(string pagina)
+        {
+            await Shell.Current.GoToAsync($"/{pagina}?usuario={UsuarioID}");
         }
 
         public PerfilViewModel()

@@ -15,6 +15,7 @@ namespace LoginSystemPowerCode
             Routing.RegisterRoute(nameof(Perfil), typeof(LoginSystemPowerCode.Pages.Perfil));
             Routing.RegisterRoute(nameof(LoginPageViewModel), typeof(LoginSystemPowerCode.ViewModels.LoginPageViewModel));
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginSystemPowerCode.Pages.LoginPage));
+            Routing.RegisterRoute(nameof(PaginaPrincipal), typeof(LoginSystemPowerCode.Pages.PaginaPrincipal));
         }
     }
 }

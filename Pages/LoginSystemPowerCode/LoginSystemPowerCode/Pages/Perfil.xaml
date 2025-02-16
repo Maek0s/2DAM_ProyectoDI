@@ -11,257 +11,287 @@
         <vm:PerfilViewModel />
     </ContentPage.BindingContext>
 
-    <ScrollView>
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Frame WidthRequest="700"
-                   Margin="0"
-                   HeightRequest="550"
-                   BackgroundColor="#B0D7FF"
-                   BorderColor="Black"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center">
+    <Grid ColumnDefinitions="*, Auto">
 
-                <Grid ColumnDefinitions="Auto, *, Auto"
-                      RowDefinitions="Auto, Auto, Auto, Auto"
-                      Padding="10">
-                    <Grid Grid.Column="0" Grid.Row="0">
+        <ScrollView Grid.Column="0">
+            <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame WidthRequest="700"
+                       Margin="0"
+                       HeightRequest="550"
+                       BackgroundColor="#B0D7FF"
+                       BorderColor="Black"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
 
-                        <Frame WidthRequest="110"
-                                HeightRequest="110"
-                                CornerRadius="55"
-                                BorderColor="Black"
-                                BackgroundColor="White"
-                                Padding="0"
-                                HasShadow="False"
-                                VerticalOptions="Start"
-                                HorizontalOptions="Start">
+                    <Grid ColumnDefinitions="Auto, *, Auto"
+                          RowDefinitions="Auto, Auto, Auto, Auto"
+                          Padding="10">
+                        <Grid Grid.Column="0" Grid.Row="0">
 
-                            <Image Source="{Binding Usuario.Imagen}"
-                                    WidthRequest="110"
+                            <Frame WidthRequest="110"
                                     HeightRequest="110"
+                                    CornerRadius="55"
+                                    BorderColor="Black"
+                                    BackgroundColor="White"
+                                    Padding="0"
+                                    HasShadow="False"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Start">
+
+                                <Image Source="{Binding Usuario.Imagen}"
+                                        WidthRequest="110"
+                                        HeightRequest="110"
+                                        Aspect="AspectFill"
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Image.Clip>
+                                        <EllipseGeometry Center="55,55" RadiusX="55" RadiusY="55"/>
+                                    </Image.Clip>
+                                </Image>
+                            </Frame>
+
+                            <Image Source="pencil.png"
+                                    WidthRequest="25"
+                                    HeightRequest="25"
                                     Aspect="AspectFill"
-                                    VerticalOptions="FillAndExpand"
-                                    HorizontalOptions="FillAndExpand">
-                                <Image.Clip>
-                                    <EllipseGeometry Center="55,55" RadiusX="55" RadiusY="55"/>
-                                </Image.Clip>
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="EndAndExpand"
+                                    Margin="20,0,0,0">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnChangeProfileImage_Tapped"/>
+                                </Image.GestureRecognizers>
                             </Image>
-                        </Frame>
 
-                        <Image Source="pencil.png"
-                                WidthRequest="25"
-                                HeightRequest="25"
-                                Aspect="AspectFill"
-                                VerticalOptions="Start"
-                                HorizontalOptions="EndAndExpand"
-                                Margin="20,0,0,0">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="OnChangeProfileImage_Tapped"/>
-                            </Image.GestureRecognizers>
-                        </Image>
+                        </Grid>
 
-                    </Grid>
+                        <HorizontalStackLayout Grid.Column="1"
+                                               Grid.Row="0"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               Spacing="10">
 
-                    <HorizontalStackLayout Grid.Column="1"
-                                           Grid.Row="0"
+                            <VerticalStackLayout VerticalOptions="Start"
+                                                 HorizontalOptions="Start"
+                                                 Margin="10,0,0,0">
+
+                                <HorizontalStackLayout>
+                                    <Label x:Name="lblNickname"
+                                           Text="{Binding Usuario.Nickname}"
+                                           FontFamily="Bahnschrift"
+                                           FontSize="20"
+                                           HorizontalOptions="Start"/>
+
+                                    <Image Source="pencil.png"
+                                           x:Name="imgNickname"
+                                           WidthRequest="15"
+                                           HeightRequest="15"
+                                           Margin="5,5,0,0"
+                                           Aspect="AspectFill"
                                            VerticalOptions="Start"
-                                           HorizontalOptions="Start"
-                                           Spacing="10">
-
-                        <VerticalStackLayout VerticalOptions="Start"
-                                             HorizontalOptions="Start"
-                                             Margin="10,0,0,0">
-
-                            <HorizontalStackLayout>
-                                <Label x:Name="lblNickname"
-                                       Text="{Binding Usuario.Nickname}"
-                                       FontFamily="Bahnschrift"
-                                       FontSize="20"
-                                       HorizontalOptions="Start"/>
-
-                                <Image Source="pencil.png"
-                                       x:Name="imgNickname"
-                                       WidthRequest="15"
-                                       HeightRequest="15"
-                                       Margin="5,5,0,0"
-                                       Aspect="AspectFill"
-                                       VerticalOptions="Start"
-                                       HorizontalOptions="Start">
-                                    <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnChangeNickname_Tapped"/>
-                                    </Image.GestureRecognizers>
-                                </Image>
+                                           HorizontalOptions="Start">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnChangeNickname_Tapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
                                 
-                            </HorizontalStackLayout>
-                            <HorizontalStackLayout>
-                                <Label x:Name="lblNombre"
-                                       Text="{Binding Usuario.Nombre}"
-                                       FontFamily="Bahnschrift"
-                                       FontSize="16"
-                                       HorizontalOptions="Start"/>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label x:Name="lblNombre"
+                                           Text="{Binding Usuario.Nombre}"
+                                           FontFamily="Bahnschrift"
+                                           FontSize="16"
+                                           HorizontalOptions="Start"/>
 
-                                <Image Source="pencil.png"
-                                       WidthRequest="15"
-                                       HeightRequest="15"
-                                       Margin="5,3,0,0"
-                                       Aspect="AspectFill"
-                                       VerticalOptions="Start"
-                                       HorizontalOptions="Start">
-                                    <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnChangeNombre_Tapped"/>
-                                    </Image.GestureRecognizers>
-                                </Image>
-                            </HorizontalStackLayout>
+                                    <Image Source="pencil.png"
+                                           WidthRequest="15"
+                                           HeightRequest="15"
+                                           Margin="5,3,0,0"
+                                           Aspect="AspectFill"
+                                           VerticalOptions="Start"
+                                           HorizontalOptions="Start">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnChangeNombre_Tapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </HorizontalStackLayout>
 
-                        </VerticalStackLayout>
-                    </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
                     
-                    <Frame WidthRequest="200"
-                           HeightRequest="50"
-                           Grid.Column="2"
-                           Grid.Row="0"
-                           BorderColor="Black"
-                           BackgroundColor="AliceBlue"
-                           Padding="0"
-                           VerticalOptions="Start"
-                           HorizontalOptions="End"
-                           Margin="20,0,0,0">
+                        <Frame WidthRequest="200"
+                               HeightRequest="50"
+                               Grid.Column="2"
+                               Grid.Row="0"
+                               BorderColor="Black"
+                               BackgroundColor="AliceBlue"
+                               Padding="0"
+                               VerticalOptions="Start"
+                               HorizontalOptions="End"
+                               Margin="20,0,0,0">
 
-                        <VerticalStackLayout
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center">
-                            <Label x:Name="lblSueldoActual"
-                                    Text="{Binding Usuario.Saldo, StringFormat='Saldo actual: {0} €'}"
-                                    FontSize="18"
-                                    FontFamily="Bahnschrift"                                 
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center">
-                                <Label.Triggers>
-                                    <DataTrigger TargetType="Label" Binding="{Binding Usuario.Saldo}" Value="0">
-                                        <Setter Property="TextColor" Value="Red"/>
-                                    </DataTrigger>
-                                </Label.Triggers>
-                            </Label>
-                        </VerticalStackLayout>
-                    </Frame>
-
-                    <VerticalStackLayout Grid.Column="2"
-                                         Grid.Row="1"
-                                         WidthRequest="200"
-                                         HorizontalOptions="End"
-                                         Margin="20,-30,0,0"
-                                         Spacing="10">
-
-                        <Button x:Name="btnCambiarPassword"
-                                Text="Cambiar contraseña"
-                                FontSize="15"
-                                FontFamily="Bahnschrift"
-                                Command="{Binding ResetPasswordCommand}"
+                            <VerticalStackLayout
                                 HorizontalOptions="Center"
-                                VerticalOptions="Start"/>
-                    </VerticalStackLayout>
-                    
-                    <!-- Frame estadisticas -->
-                    <Frame WidthRequest="400"
-                           HeightRequest="60"
-                           Grid.Column="0"
-                           Grid.ColumnSpan="3"
-                           Grid.Row="1"
-                           BackgroundColor="WhiteSmoke"
-                           BorderColor="Gray"
-                           Padding="10"
-                           Margin="0,10,0,0"
-                           HorizontalOptions="Start"
-                           VerticalOptions="Start">
-
-                        <Grid ColumnDefinitions="*, *">
-
-                            <VerticalStackLayout Grid.Column="0">
-                                <Label Text="Cantidad juegos"
-                                       
-                                       FontAttributes="Bold"/>
-                                <Label Text="{Binding TotalJuegos, StringFormat='{0} {Binding TotalJuegos, Converter={StaticResource JuegoPluralConverter}}'}"
-                                       HorizontalOptions="Start"
-                                       Margin="20,0,0,0">
+                                VerticalOptions="Center">
+                                <Label x:Name="lblSueldoActual"
+                                        Text="{Binding Usuario.Saldo, StringFormat='Saldo actual: {0} €'}"
+                                        FontSize="18"
+                                        FontFamily="Bahnschrift"                                 
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="Center">
                                     <Label.Triggers>
-                                        <DataTrigger TargetType="Label" Binding="{Binding TotalJuegos}" Value="1">
-                                            <Setter Property="Text" Value="{Binding TotalJuegos, StringFormat='{0} juego'}" />
+                                        <DataTrigger TargetType="Label" Binding="{Binding Usuario.Saldo}" Value="0">
+                                            <Setter Property="TextColor" Value="Red"/>
                                         </DataTrigger>
                                     </Label.Triggers>
                                 </Label>
                             </VerticalStackLayout>
+                        </Frame>
 
-                            <VerticalStackLayout Grid.Column="1">
-                                <Label Text="Horas jugadas"
-                                       FontAttributes="Bold"/>
-                                <Label Text="{Binding HorasJugadasTotales, StringFormat='{0} horas'}"
-                                       Margin="15,0,0,0"/>
-                            </VerticalStackLayout>
-                        </Grid>
-                    </Frame>
+                        <VerticalStackLayout Grid.Column="2"
+                                             Grid.Row="1"
+                                             WidthRequest="200"
+                                             HorizontalOptions="End"
+                                             Margin="20,-30,0,0"
+                                             Spacing="10">
 
-                    <!-- Juegos comprados -->
-                    <Frame WidthRequest="400"
-                           HeightRequest="280"
-                           Grid.Column="0"
-                           Grid.ColumnSpan="3"
-                           Grid.Row="2"
-                           BackgroundColor="WhiteSmoke"
-                           BorderColor="Gray"
-                           Padding="10"
-                           Margin="0,10,0,0"
-                           HorizontalOptions="Start"
-                           VerticalOptions="Start">
+                            <Button x:Name="btnCambiarPassword"
+                                    Text="Cambiar contraseña"
+                                    FontSize="15"
+                                    FontFamily="Bahnschrift"
+                                    Command="{Binding ResetPasswordCommand}"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"/>
+                        </VerticalStackLayout>
+                    
+                        <!-- Frame estadisticas -->
+                        <Frame WidthRequest="400"
+                               HeightRequest="60"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3"
+                               Grid.Row="1"
+                               BackgroundColor="WhiteSmoke"
+                               BorderColor="Gray"
+                               Padding="10"
+                               Margin="0,10,0,0"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Start">
 
-                        <ScrollView>
-                            <VerticalStackLayout Spacing="10">
-                                <CollectionView ItemsSource="{Binding Usuario.ListaJuegos}">
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <VerticalStackLayout>
-                                                <Frame HeightRequest="60" 
-                                                       CornerRadius="20" 
-                                                       Margin="0,0,0,10"
-                                                       BorderColor="Black">
-                                                    <HorizontalStackLayout Spacing="20"
-                                                                           HorizontalOptions="FillAndExpand">
-                                                        <Grid ColumnDefinitions="50, 130, 150" Padding="5,0,0,0">
-                                                            <!-- Imagen más pegada a la izquierda -->
-                                                            <Image Source="{Binding Imagen}"
-                                                                   WidthRequest="50"
-                                                                   HeightRequest="45"
-                                                                   Aspect="AspectFit"
-                                                                   Grid.Column="0"
-                                                                   Margin="-20,0,0,0"
-                                                                   VerticalOptions="Center"
-                                                                   HorizontalOptions="Start"/>
+                            <Grid ColumnDefinitions="*, *">
 
-                                                            <!-- Nombre del juego -->
-                                                            <Label Text="{Binding Nombre}"
-                                                                   FontSize="14"
-                                                                   Grid.Column="1"
-                                                                   VerticalOptions="Center"
-                                                                   HorizontalOptions="Start"/>
+                                <VerticalStackLayout Grid.Column="0">
+                                    <Label Text="Cantidad juegos"
+                                       
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding TotalJuegos, StringFormat='{0} {Binding TotalJuegos, Converter={StaticResource JuegoPluralConverter}}'}"
+                                           HorizontalOptions="Start"
+                                           Margin="20,0,0,0">
+                                        <Label.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding TotalJuegos}" Value="1">
+                                                <Setter Property="Text" Value="{Binding TotalJuegos, StringFormat='{0} juego'}" />
+                                            </DataTrigger>
+                                        </Label.Triggers>
+                                    </Label>
+                                </VerticalStackLayout>
 
-                                                            <!-- Horas jugadas -->
-                                                            <Label Text="{Binding HorasJugadas, StringFormat='{0} horas'}"
-                                                                   FontSize="14"
-                                                                   Grid.Column="2"
-                                                                   VerticalOptions="Center"
-                                                                   HorizontalOptions="EndAndExpand"/>
-                                                        </Grid>
-                                                    </HorizontalStackLayout>
-                                                </Frame>
-                                            </VerticalStackLayout>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
-                            </VerticalStackLayout>
-                        </ScrollView>
+                                <VerticalStackLayout Grid.Column="1">
+                                    <Label Text="Horas jugadas"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding HorasJugadasTotales, StringFormat='{0} horas'}"
+                                           Margin="15,0,0,0"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
 
-                    </Frame>
-                </Grid>
-            </Frame>
-        </VerticalStackLayout>
-    </ScrollView>
+                        <!-- Juegos comprados -->
+                        <Frame WidthRequest="400"
+                               HeightRequest="280"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3"
+                               Grid.Row="2"
+                               BackgroundColor="WhiteSmoke"
+                               BorderColor="Gray"
+                               Padding="10"
+                               Margin="0,10,0,0"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Start">
+
+                            <ScrollView>
+                                <VerticalStackLayout Spacing="10">
+                                    <CollectionView ItemsSource="{Binding Usuario.ListaJuegos}">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <VerticalStackLayout>
+                                                    <Frame HeightRequest="60" 
+                                                           CornerRadius="20" 
+                                                           Margin="0,0,0,10"
+                                                           BorderColor="Black">
+                                                        <HorizontalStackLayout Spacing="20"
+                                                                               HorizontalOptions="FillAndExpand">
+                                                            <Grid ColumnDefinitions="50, 130, 150" Padding="5,0,0,0">
+                                                                <!-- Imagen más pegada a la izquierda -->
+                                                                <Image Source="{Binding Imagen}"
+                                                                       WidthRequest="50"
+                                                                       HeightRequest="45"
+                                                                       Aspect="AspectFit"
+                                                                       Grid.Column="0"
+                                                                       Margin="-20,0,0,0"
+                                                                       VerticalOptions="Center"
+                                                                       HorizontalOptions="Start"/>
+
+                                                                <!-- Nombre del juego -->
+                                                                <Label Text="{Binding Nombre}"
+                                                                       FontSize="14"
+                                                                       Grid.Column="1"
+                                                                       VerticalOptions="Center"
+                                                                       HorizontalOptions="Start"/>
+
+                                                                <!-- Horas jugadas -->
+                                                                <Label Text="{Binding HorasJugadas, StringFormat='{0} horas'}"
+                                                                       FontSize="14"
+                                                                       Grid.Column="2"
+                                                                       VerticalOptions="Center"
+                                                                       HorizontalOptions="EndAndExpand"/>
+                                                            </Grid>
+                                                        </HorizontalStackLayout>
+                                                    </Frame>
+                                                </VerticalStackLayout>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </VerticalStackLayout>
+                            </ScrollView>
+
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Menú lateral derecho -->
+        <Frame BorderColor="Black" CornerRadius="10" Padding="10" Margin="10" WidthRequest="140" Grid.Column="1">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
+                    <Image Source="home.png" HeightRequest="30" WidthRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavegarPrincipalCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Principal" WidthRequest="60"/>
+
+                    <Image Source="user.png" HeightRequest="30" WidthRequest="40"/>
+                    <Label Text="Perfil" WidthRequest="40" VerticalOptions="Center"/>
+
+                    <Image Source="wallet.png" HeightRequest="30" WidthRequest="40"/>
+                    <Label Text="Saldo" WidthRequest="40" VerticalOptions="Center"/>
+
+                    <Image Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100"/>
+                    <Label Text="Biblioteca" WidthRequest="65" HeightRequest="65"/>
+
+                    <Image Source="logout.png" HeightRequest="30"/>
+                    <Label Text="Salida" WidthRequest="50"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
 </ContentPage>

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2DAM_ProyectoDI\\Pages\\PaginaPrincipalProyectoo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86EE61C4-0E8C-4999-B5B1-CEC4575D9163}|PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo.csproj|e:\\2dam_proyectodi\\pages\\paginaprincipalproyectoo\\paginaprincipalproyectoo\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86EE61C4-0E8C-4999-B5B1-CEC4575D9163}|PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo.csproj|solutionrelative:paginaprincipalproyectoo\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86EE61C4-0E8C-4999-B5B1-CEC4575D9163}|PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo.csproj|e:\\2dam_proyectodi\\pages\\paginaprincipalproyectoo\\paginaprincipalproyectoo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{86EE61C4-0E8C-4999-B5B1-CEC4575D9163}|PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo.csproj|solutionrelative:paginaprincipalproyectoo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86EE61C4-0E8C-4999-B5B1-CEC4575D9163}|PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo.csproj|e:\\2dam_proyectodi\\pages\\paginaprincipalproyectoo\\paginaprincipalproyectoo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86EE61C4-0E8C-4999-B5B1-CEC4575D9163}|PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo.csproj|solutionrelative:paginaprincipalproyectoo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "PaginaPrincipalProyectoo\\MainPage.xaml.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo\\MainPage.xaml.cs",
+              "RelativeToolTip": "PaginaPrincipalProyectoo\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T16:13:38.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PaginaPrincipalProyectoo\\App.xaml.cs",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo\\App.xaml.cs",
+              "RelativeToolTip": "PaginaPrincipalProyectoo\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T16:10:21.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "E:\\2DAM_ProyectoDI\\Pages\\PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo\\MainPage.xaml",
+              "RelativeDocumentMoniker": "PaginaPrincipalProyectoo\\MainPage.xaml",
+              "ToolTip": "E:\\2DAM_ProyectoDI\\Pages\\PaginaPrincipalProyectoo\\PaginaPrincipalProyectoo\\MainPage.xaml",
+              "RelativeToolTip": "PaginaPrincipalProyectoo\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-16T16:08:48.906Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

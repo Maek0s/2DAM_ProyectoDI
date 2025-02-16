@@ -20,8 +20,6 @@ namespace LoginSystemPowerCode.ViewModels
 
         public RegisterViewModel()
         {
-
-
             RegisterCommand = new Command(OnRegister);  // Asignamos el comando para el botón de registro
         }
 

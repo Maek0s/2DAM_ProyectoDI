@@ -13,41 +13,42 @@ namespace LoginSystemPowerCode.Models
         // Declaración de variables //
 
         private int id;
+        private String _nombre;
+        private int _precio;
+        private String _descripcion;
+        private String _imagen;
+        private int _horasJugadas;
+
         public int Id
         {
             get { return id; }
             set { id = value; OnPropertyChanged(); }
         }
 
-        private String _nombre;
         public String Nombre
         {
             get { return _nombre; }
             set { _nombre = value; OnPropertyChanged(); }
         }
 
-        private int _precio;
         public int Precio
         {
             get { return _precio; }
             set { _precio = value; OnPropertyChanged(); }
         }
 
-        private String _descripcion;
         public String Descripcion
         {
             get { return _descripcion; }
             set { _descripcion = value; OnPropertyChanged(); }
         }
 
-        private String _imagen;
         public String Imagen
         {
             get { return _imagen; }
             set { _imagen = value; OnPropertyChanged(); }
         }
 
-        private int _horasJugadas;
         public int HorasJugadas
         {
             get { return _horasJugadas; }

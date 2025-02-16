@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:LoginSystemPowerCode.ViewModels"
+             x:Class="LoginSystemPowerCode.Pages.PaginaPrincipal"
+             Title="PaginaPrincipal">
+
+    <!-- Establecer el ViewModel como BindingContext -->
+    <ContentPage.BindingContext>
+        <vm:PaginaPrincipalViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        HorizontalOptions="Center">
+
+            <!-- Usamos un Grid para la imagen y el contenido tipo iframe -->
+            <Grid ColumnDefinitions="Auto, 2*, Auto" RowDefinitions="2*, Auto, Auto, Auto, Auto" WidthRequest="1280">
+                <!-- Título de la página -->
+                <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                HeightRequest="100"
+                Text="PowerCode Studios"
+                HorizontalOptions="Center"
+                FontSize="Title"
+                FontAttributes="Bold" />
+
+                <!-- Titulo View -->
+                <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                HeightRequest="35"
+                Text="{Binding Titulo}"
+                HorizontalOptions="Center"
+                FontSize="Title"
+                FontAttributes="Bold" />
+
+                <!-- Imagen centrada (columna 0) -->
+                <Image Grid.Column="0" Source="logopro.png" HeightRequest="150" WidthRequest="100" Grid.Row="2"/>
+                <Image Grid.Row="2"
+                Source="{Binding Imagen}"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="500"
+                HeightRequest="300" />
+
+                <!-- Contenido tipo iframe (simulado con WebView en columna 1) -->
+                <Frame BorderColor="Black" CornerRadius="10" Padding="10" Margin="20" WidthRequest="140" HeightRequest="500" Grid.Column="2" Grid.Row="1" Grid.RowSpan="6">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                        <!-- Contenedor de los Labels que se ajustarán automáticamente -->
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
+                            <Image Source="home.png" HeightRequest="30" WidthRequest="40"/>
+                            <Label Text="Principal" WidthRequest="60"/>
+
+                            <Image Grid.Column="0" Source="user.png" HeightRequest="30" WidthRequest="40" Grid.Row="2">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding NavegarPerfilCommand}"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="Perfil" WidthRequest="40" VerticalOptions="Center" />
+                            <Image Grid.Column="0" Source="wallet.png" HeightRequest="30" WidthRequest="40" Grid.Row="2"/>
+                            <Label Text="Saldo" WidthRequest="40" VerticalOptions="Center" />
+                            <Image Grid.Column="0" Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100" Grid.Row="2"/>
+                            <Label Text="Biblioteca" WidthRequest="65" HeightRequest="65 " />
+                            <Image Grid.Column="0" Source="logout.png" HeightRequest="30"  Grid.Row="2" />
+                            <Label Text="Salida" WidthRequest="50" />
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!--perfil , cerra sesion  , bibiblioteca , home -->
+                <Frame BorderColor="Black" CornerRadius="10" Padding="10" Margin="20" WidthRequest="540" HeightRequest="150" Grid.Column="1" Grid.Row="4">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                        <!-- Contenedor de los Labels que se ajustarán automáticamente -->
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="10">
+                            <!-- Primer Label (Descripción) que se ajusta al espacio disponible -->
+                            <Label
+                            Text="{Binding DescripcionTexto}"
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="Start" 
+                            LineBreakMode="WordWrap" 
+                            Margin="10"
+                            MinimumWidthRequest="0"/>
+                        </StackLayout>
+
+                        <!-- Vertical StackLayout para el precio y botón -->
+                        <VerticalStackLayout>
+                            <Label
+                            Text="{Binding Precio}"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Start"
+                            LineBreakMode="WordWrap"
+                            Margin="10"
+                            MinimumWidthRequest="0"/>
+
+                            <!-- Botón a la derecha -->
+                            <Button Text="Comprar" WidthRequest="100" HorizontalOptions="End" VerticalOptions="Center"/>
+                        </VerticalStackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+            </Grid>
+
+            <!-- Frame con Descripción y Precio -->
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
