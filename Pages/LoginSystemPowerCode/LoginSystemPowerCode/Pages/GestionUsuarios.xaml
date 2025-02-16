@@ -76,21 +76,33 @@
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
                     <Image Source="home.png" HeightRequest="30" WidthRequest="40">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding NavegarPrincipalCommand}"/>
+                            <TapGestureRecognizer Command="{Binding ViajarHomeCommand}"/>
                         </Image.GestureRecognizers>
                     </Image>
                     <Label Text="Principal" WidthRequest="60"/>
-                    <Image Source="user.png" HeightRequest="30" WidthRequest="40"/>
+                    <Image Source="user.png" HeightRequest="30" WidthRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavegarPerfilCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Label Text="Perfil" WidthRequest="40" VerticalOptions="Center"/>
-                    <Image Source="wallet.png" HeightRequest="30" WidthRequest="40"/>
+                    <Image Source="wallet.png" HeightRequest="30" WidthRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ViajarCarteraCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Label Text="Saldo" WidthRequest="40" VerticalOptions="Center"/>
                     <Image Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding NavegarGestionUsersCommand}"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="Biblioteca" WidthRequest="65" HeightRequest="65"/>
-                    <Image Source="logout.png" HeightRequest="30"/>
+                    <Label Text="Gestion Usuarios" WidthRequest="65" HeightRequest="65"/>
+                    <Image Source="logout.png" HeightRequest="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ViajarSalidaCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Label Text="Salida" WidthRequest="50"/>
                 </StackLayout>
             </StackLayout>

@@ -59,40 +59,6 @@ namespace LoginSystemPowerCode.Systems
             }
         }
 
-        public List<Juego> ObtenerTodosLosJuegos()
-        {
-            List<Juego> juegos = new List<Juego>();
-
-            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
-            {
-                connection.Open();
-
-                string query = "SELECT id, titulo, descripcion, precio, imagen FROM juegos";
-                using (SQLiteCommand command = new SQLiteCommand(query, connection))
-                {
-                    using (SQLiteDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            juegos.Add(new Juego
-                            {
-                                Id = reader.GetInt32(0),
-                                Nombre = reader.GetString(1),
-                                Descripcion = reader.GetString(2),
-                                Precio = reader.GetInt32(3), // Suponiendo que es un entero
-                                Imagen = reader.GetString(4)
-                            });
-                        }
-                    }
-                }
-
-                connection.Close();
-            }
-
-            return juegos;
-        }
-
-
         public string CrearUsuario(string correo, string password)
         {
             Debug.WriteLine($"Creando usuario: {correo}");

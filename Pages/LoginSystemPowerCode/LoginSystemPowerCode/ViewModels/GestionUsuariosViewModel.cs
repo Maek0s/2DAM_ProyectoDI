@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.Windows.Input;
 
 namespace LoginSystemPowerCode.ViewModels
 {
@@ -28,14 +29,46 @@ namespace LoginSystemPowerCode.ViewModels
             }
         }
 
-        public Command GuardarCambiosCommand { get; }
+        private string _usuarioID;
+        public string UsuarioID
+        {
+            get { return _usuarioID; }
+            set
+            {
+                _usuarioID = value;
+            }
+        }
 
+        public Command GuardarCambiosCommand { get; }
+        public ICommand NavegarPerfilCommand { get; }
+        public ICommand ViajarCarteraCommand { get; }
+        public ICommand ViajarSalidaCommand { get; }
+        public ICommand ViajarHomeCommand { get; }
         public GestionUsuariosViewModel()
         {
+            NavegarPerfilCommand = new Command(viajarPerfil);
+            ViajarCarteraCommand = new Command(viajarCartera);
+            ViajarHomeCommand = new Command(viajarHome);
+            ViajarSalidaCommand = new Command(viajarSalida);
             Usuarios = new ObservableCollection<Usuario>(CargarUsuarios());
             GuardarCambiosCommand = new Command(GuardarCambios);
         }
-
+        private async void viajarPerfil()
+        {
+            await Shell.Current.GoToAsync($"/Perfil?usuario={UsuarioID}");
+        }
+        private async void viajarCartera()
+        {
+            await Shell.Current.GoToAsync($"/Cartera?usuario={UsuarioID}");
+        }
+        private async void viajarSalida()
+        {
+            await Shell.Current.GoToAsync($"/LoginPage?");
+        }
+        private async void viajarHome()
+        {
+            await Shell.Current.GoToAsync($"/PaginaPrincipal?usuario={UsuarioID}");
+        }
         private List<Usuario> CargarUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario>();

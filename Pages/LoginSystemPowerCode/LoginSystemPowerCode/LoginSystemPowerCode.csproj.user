@@ -15,6 +15,9 @@
     <MauiXaml Update="Pages\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\Cartera.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\PaginaPrincipal.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

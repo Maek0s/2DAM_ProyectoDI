@@ -77,6 +77,9 @@
 	  <MauiXaml Update="Pages\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\Cartera.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\PaginaPrincipal.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -90,6 +93,12 @@
 
 	<ItemGroup>
 	  <Folder Include="XAML\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Pages\Cartera.xaml.cs">
+	    <DependentUpon>Cartera.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>
