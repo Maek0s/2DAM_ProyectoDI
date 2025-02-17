@@ -81,6 +81,8 @@
                             </Label.FormattedText>
                         </Label>
                         <Button Text="Comprar"
+                                Command="{Binding ComprarJuegoCommand}"
+                                CommandParameter="{Binding Id}"
                                 WidthRequest="100"/>
                     </StackLayout>
                 </Grid>
@@ -119,12 +121,13 @@
                     </Image>
                     <Label Text="Saldo" HorizontalOptions="Center"/>
 
-                    <Image Source="gestionusuarios.png" HeightRequest="40" WidthRequest="40">
+                    <Image Source="gestionusuarios.png" HeightRequest="40" WidthRequest="40"
+                           IsVisible="{Binding Usuario.Admin}">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ViajarGestionUsuariosCommand}"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="Gestion Usuarios" HorizontalOptions="Center"/>
+                    <Label Text="Usuarios" HorizontalOptions="Center" IsVisible="{Binding Usuario.Admin}"/>
 
                     <Image Source="logout.png" HeightRequest="40" WidthRequest="40">
                         <Image.GestureRecognizers>

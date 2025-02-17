@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LoginSystemPowerCode.Models;
+using LoginSystemPowerCode.Systems;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,33 +18,12 @@ namespace LoginSystemPowerCode.ViewModels
         private Timer _timer;
         private int _imagenActual = 0;
 
-        private readonly List<string> _imagenes = new()
-        {
-            "lol.jpg",
-            "marvelrivals.jpg",
-            "osu.jpg"
-        };
+        private MgtDatabase _mgtDatabase = new MgtDatabase();
 
-        private readonly List<string> _titulos = new()
-        {
-            "League of Legends",
-            "Marvel Rivals",
-            "Osu"
-        };
-
-        private readonly List<string> _descripcion = new()
-        {
-            "League of Legends es un videojuego multijugador de arena de batalla.",
-            "Marvel Rivals es un videojuego de acción de disparos de héroes en tercera persona.",
-            "Osu es un juego fuertemente orientado a la comunidad, con todos los mapas de ritmos y canciones jugables."
-        };
-
-        private readonly List<string> _precios = new()
-        {
-            "20€",
-            "40€",
-            "5€"
-        };
+        private List<string> _imagenes = new();
+        private List<string> _titulos = new();
+        private List<string> _descripciones = new();
+        private List<string> _precios = new();
 
         // Propiedades Bindables
         private string _imagen;
@@ -96,11 +77,27 @@ namespace LoginSystemPowerCode.ViewModels
             set
             {
                 _usuarioID = value;
+                Usuario = _mgtDatabase.ObtenerUsuarioPorId(int.Parse(value));
             }
         }
 
-        // MENU //
+        private Usuario _usuario;
+        public Usuario Usuario
+        {
+            get { return _usuario; }
+            set
+            {
+                if (_usuario != value)
+                {
+                    _usuario = value;
+                    OnPropertyChanged(nameof(Usuario));
+                }
+            }
+        }
 
+        public ICommand ComprarJuegoCommand { get; }
+
+        // MENU //
         public ICommand NavegarPerfilCommand { get; }
         public ICommand ViajarCarteraCommand { get; }
         public ICommand ViajarSalidaCommand { get;  }
@@ -111,12 +108,15 @@ namespace LoginSystemPowerCode.ViewModels
             // Inicializar valores
             ActualizarDatos();
 
-            NavegarPerfilCommand = new Command(viajarPerfil);
-            ViajarCarteraCommand = new Command(viajarCartera);
-            ViajarSalidaCommand = new Command(viajarSalida);
-            ViajarGestionUsuariosCommand = new Command(viajarGestionUsuarios);
+            ComprarJuegoCommand = new Command<int>(async (juegoId) => await ComprarJuego(juegoId));
 
+            // MENU //
+            NavegarPerfilCommand = new Command(async () => await NavegarID("Perfil"));
+            ViajarCarteraCommand = new Command(async () => await NavegarID("Cartera"));
+            ViajarGestionUsuariosCommand = new Command(async () => await NavegarID("GestionUsuarios"));
+            ViajarSalidaCommand = new Command(async () => await NavegarA("LoginPage"));
 
+            CargarJuegosDesdeBD();
 
             // Configurar el temporizador para cambiar la imagen cada 10 segundos
             _timer = new Timer(10000);
@@ -124,26 +124,55 @@ namespace LoginSystemPowerCode.ViewModels
             _timer.Start();
         }
 
-        private async void viajarPerfil()
+        private async Task ComprarJuego(int juegoId)
         {
-            await Shell.Current.GoToAsync($"/Perfil?usuario={UsuarioID}");
+            // Verificar si el usuario ya tiene el juego
+            bool tieneJuego = await _mgtDatabase.VerificarSiTieneJuego(Usuario.Id, juegoId);
+
+            if (tieneJuego)
+            {
+                // Si ya tiene el juego, mostrar un popup
+                await Application.Current.MainPage.DisplayAlert("¡Ya tienes este juego!",
+                                                                "Este juego ya está en tu biblioteca.",
+                                                                "OK");
+            }
+            else
+            {
+                // Si no lo tiene, agregar el juego a su biblioteca
+                await _mgtDatabase.AgregarJuegoAUsuarioAsync(Usuario.Id, juegoId);
+                await Application.Current.MainPage.DisplayAlert("¡Juego añadido!",
+                                                                "El juego se ha añadido a tu biblioteca.",
+                                                                "OK");
+            }
         }
-        private async void viajarCartera()
-        {
-            await Shell.Current.GoToAsync($"/Cartera?usuario={UsuarioID}");
-        }
-        private async void viajarSalida()
-        {
-            await Shell.Current.GoToAsync($"/LoginPage?");
-        }
-        private async void viajarGestionUsuarios()
-        {
-            await Shell.Current.GoToAsync($"/GestionUsuarios?usuario={UsuarioID}");
-        }
-       
 
 
 
+        private async void CargarJuegosDesdeBD()
+        {
+            List<Juego> juegos = _mgtDatabase.ObtenerTodosLosJuegos(); // Suponiendo que esta función existe en MgtDatabase
+
+            if (juegos.Any())
+            {
+                _imagenes = juegos.Select(j => j.Imagen).ToList();
+                _titulos = juegos.Select(j => j.Nombre).ToList();
+                _descripciones = juegos.Select(j => j.Descripcion).ToList();
+                _precios = juegos.Select(j => $"{j.Precio}€").ToList(); // Formateamos el precio con €
+
+                _imagenActual = 0;
+                ActualizarDatos();
+            }
+        }
+
+        private async Task NavegarID(string pagina)
+        {
+            await Shell.Current.GoToAsync($"/{pagina}?usuario={UsuarioID}");
+        }
+
+        private async Task NavegarA(string pagina)
+        {
+            await Shell.Current.GoToAsync($"/{pagina}");
+        }
 
         private void OnTimerElapsed(object sender, ElapsedEventArgs e)
         {
@@ -154,9 +183,11 @@ namespace LoginSystemPowerCode.ViewModels
 
         private void ActualizarDatos()
         {
+            if (_imagenes.Count == 0) return;
+
             Imagen = _imagenes[_imagenActual];
             Titulo = _titulos[_imagenActual];
-            DescripcionTexto = _descripcion[_imagenActual];
+            DescripcionTexto = _descripciones[_imagenActual];
             Precio = _precios[_imagenActual];
         }
 

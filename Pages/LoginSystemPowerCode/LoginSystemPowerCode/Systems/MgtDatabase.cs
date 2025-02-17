@@ -34,7 +34,7 @@ namespace LoginSystemPowerCode.Systems
 
                 // Creamos la consulta para verificar si el correo y la contraseña coinciden
                 string query = "SELECT COUNT(*) FROM usuarios WHERE correo = @correo AND password = @password";
-                Debug.WriteLine(correo + " " + password);
+                
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
                     // Agregamos los parámetros para evitar inyecciones SQL
@@ -109,7 +109,7 @@ namespace LoginSystemPowerCode.Systems
                 }
 
                 connection.Close();
-                Debug.WriteLine($"Usuario {nickname} insertado correctamente.");
+                
             }
 
             return "Cuenta creada exitosamente.";
@@ -332,6 +332,125 @@ namespace LoginSystemPowerCode.Systems
 
             ejecutarQuery(query);
         }
+
+        public List<Juego> ObtenerTodosLosJuegos()
+        {
+            List<Juego> juegos = new List<Juego>();
+            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
+            {
+                connection.Open();
+                string query = "SELECT id, titulo, descripcion, precio, imagen FROM juegos";
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            juegos.Add(new Juego
+                            {
+                                Id = reader.GetInt32(0),
+                                Nombre = reader.GetString(1),
+                                Descripcion = reader.GetString(2),
+                                Precio = reader.GetInt32(3),
+                                Imagen = reader.GetString(4)
+                            });
+                        }
+                    }
+                }
+                connection.Close();
+            }
+            return juegos;
+        }
+
+        public void ActualizarSaldoUsuario(int userId, int nuevoSaldo)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
+            {
+                connection.Open();
+
+                string query = "UPDATE usuarios SET saldo = @saldo WHERE idUser = @id";
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@saldo", nuevoSaldo);
+                    command.Parameters.AddWithValue("@id", userId);
+                    command.ExecuteNonQuery();
+                }
+
+                connection.Close();
+            }
+        }
+
+        public string ObtenerImagenPorId(int juegoId)
+        {
+            string imagen = string.Empty;
+            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
+            {
+                connection.Open();
+
+                // Consulta para obtener la imagen correspondiente
+                string query = "SELECT imagen FROM imagenes WHERE id = @juegoId";
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@juegoId", juegoId);
+
+                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            imagen = reader.GetString(0);
+                        }
+                    }
+                }
+
+                connection.Close();
+            }
+
+            return imagen;
+        }
+
+        public async Task<bool> VerificarSiTieneJuego(int usuarioId, int juegoId)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
+            {
+                connection.Open();
+
+                string query = "SELECT COUNT(*) FROM usuarios_juegos WHERE usuario_id = @usuarioId AND juego_id = @juegoId";
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@usuarioId", usuarioId);
+                    command.Parameters.AddWithValue("@juegoId", juegoId);
+                    int existe = Convert.ToInt32(command.ExecuteScalar());
+                    return existe > 0;
+                }
+            }
+        }
+
+
+        public async Task AgregarJuegoAUsuarioAsync(int usuarioId, int juegoId)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(sacarConnection()))
+            {
+                connection.Open();
+
+                // Obtener la imagen correspondiente del juego
+                string imagenJuego = ObtenerImagenPorId(juegoId);
+
+                // Insertar el juego en la tabla intermedia
+                string queryInsert = "INSERT INTO usuarios_juegos (usuario_id, juego_id, horas, imagen) VALUES (@usuarioId, @juegoId, 0, @imagen)";
+                using (SQLiteCommand insertCommand = new SQLiteCommand(queryInsert, connection))
+                {
+                    insertCommand.Parameters.AddWithValue("@usuarioId", usuarioId);
+                    insertCommand.Parameters.AddWithValue("@juegoId", juegoId);
+                    insertCommand.Parameters.AddWithValue("@imagen", imagenJuego); // Imagen asociada al juego
+                    insertCommand.ExecuteNonQuery();
+                }
+
+                connection.Close();
+            }
+        }
+
+
+
 
         public void InsertarUsuario(string correo, string nickname, string username, string password, string imagen)
         {

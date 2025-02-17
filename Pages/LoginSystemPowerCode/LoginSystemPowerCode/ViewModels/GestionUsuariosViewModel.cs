@@ -44,31 +44,33 @@ namespace LoginSystemPowerCode.ViewModels
         public ICommand ViajarCarteraCommand { get; }
         public ICommand ViajarSalidaCommand { get; }
         public ICommand ViajarHomeCommand { get; }
-        public GestionUsuariosViewModel()
+        public GestionUsuariosViewModel(Page page)
         {
-            NavegarPerfilCommand = new Command(viajarPerfil);
-            ViajarCarteraCommand = new Command(viajarCartera);
-            ViajarHomeCommand = new Command(viajarHome);
-            ViajarSalidaCommand = new Command(viajarSalida);
             Usuarios = new ObservableCollection<Usuario>(CargarUsuarios());
             GuardarCambiosCommand = new Command(GuardarCambios);
+
+            // MENU //
+            ViajarHomeCommand = new Command(async () => await NavegarID("PaginaPrincipal"));
+            ViajarCarteraCommand = new Command(async () => await NavegarID("Cartera"));
+            NavegarPerfilCommand = new Command(async () => await NavegarID("Perfil"));
+            ViajarSalidaCommand = new Command(async () => await NavegarA("LoginPage"));
         }
-        private async void viajarPerfil()
+
+        public GestionUsuariosViewModel()
         {
-            await Shell.Current.GoToAsync($"/Perfil?usuario={UsuarioID}");
+
         }
-        private async void viajarCartera()
+
+
+        private async Task NavegarID(string pagina)
         {
-            await Shell.Current.GoToAsync($"/Cartera?usuario={UsuarioID}");
+            await Shell.Current.GoToAsync($"/{pagina}?usuario={UsuarioID}");
         }
-        private async void viajarSalida()
+        private async Task NavegarA(string pagina)
         {
-            await Shell.Current.GoToAsync($"/LoginPage?");
+            await Shell.Current.GoToAsync($"/{pagina}");
         }
-        private async void viajarHome()
-        {
-            await Shell.Current.GoToAsync($"/PaginaPrincipal?usuario={UsuarioID}");
-        }
+
         private List<Usuario> CargarUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario>();

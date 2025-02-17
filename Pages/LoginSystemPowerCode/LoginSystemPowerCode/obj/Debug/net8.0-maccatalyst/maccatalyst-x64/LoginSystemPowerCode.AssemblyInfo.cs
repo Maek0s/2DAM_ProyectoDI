@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginSystemPowerCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+83ed557c4b6e4562d2a32a84ae03977a0156a522")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2dee5a2bc7e1ea5360430ed52493d71f344d58d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginSystemPowerCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginSystemPowerCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

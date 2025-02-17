@@ -27,6 +27,8 @@ namespace LoginSystemPowerCode.ViewModels
         {
             Username = "maek0spam@gmail.com";
             Password = "123";
+           // Username = "admin@admin.com";
+           // Password = "admin";
 
             LoginCommand = new Command(OnLoginClicked);
         }
@@ -71,7 +73,7 @@ namespace LoginSystemPowerCode.ViewModels
             {
                 Usuario usuario = mgtDatabase.ObtenerUsuarioPorCorreo(Username);
                 
-                await Shell.Current.GoToAsync($"/Perfil?usuario={usuario.Id}");
+                await Shell.Current.GoToAsync($"/PaginaPrincipal?usuario={usuario.Id}");
             }
         }
 

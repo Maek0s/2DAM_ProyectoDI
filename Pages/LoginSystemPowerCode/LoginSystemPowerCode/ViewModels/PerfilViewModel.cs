@@ -31,12 +31,6 @@ namespace LoginSystemPowerCode.ViewModels
                     // Calculamos las horas jugadas totales y juegos
                     CalcularTotalHorasJugadas();
                     CalcularCantidadDeJuegos();
-
-                    // Ahora que el usuario ya se ha cargado, podemos verificar si es admin.
-                    if (_usuario != null)
-                    {
-                        Debug.WriteLine("ES ADMIN: " + _usuario.Admin);
-                    }
                 }
             }
         }
@@ -99,10 +93,7 @@ namespace LoginSystemPowerCode.ViewModels
 
             // MENU //
             NavegarPrincipalCommand = new Command(async () => await NavegarID("PaginaPrincipal"));
-
-            // CAMBIAR A SALDO
             NavegarSaldoCommand = new Command(async () => await NavegarID("Cartera"));
-
             NavegarGestionUsersCommand = new Command(async () => await NavegarID("GestionUsuarios"));
             NavegarLogOutCommand = new Command(async () => await NavegarA("LoginPage"));
         }

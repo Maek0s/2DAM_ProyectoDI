@@ -92,12 +92,14 @@
                         </Image.GestureRecognizers>
                     </Image>
                     <Label Text="Saldo" WidthRequest="40" VerticalOptions="Center"/>
-                    <Image Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100">
+                    <Image Source="gestionusuarios.png" HeightRequest="30" WidthRequest="100"
+                           IsVisible="{Binding Usuario.Admin}">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding NavegarGestionUsersCommand}"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="Gestion Usuarios" WidthRequest="65" HeightRequest="65"/>
+                    <Label Text="Gestion Usuarios" WidthRequest="65" HeightRequest="65"
+                           IsVisible="{Binding Usuario.Admin}"/>
                     <Image Source="logout.png" HeightRequest="30">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ViajarSalidaCommand}"/>

@@ -1,3 +1,4 @@
+using LoginSystemPowerCode.Systems;
 using LoginSystemPowerCode.ViewModels;
 
 namespace LoginSystemPowerCode.Pages
@@ -5,6 +6,9 @@ namespace LoginSystemPowerCode.Pages
     [QueryProperty("UsuarioID", "usuario")]
     public partial class PaginaPrincipal : ContentPage
     {
+        private readonly MgtDatabase mgtDatabase = new MgtDatabase();
+        private PaginaPrincipalViewModel _viewModel;
+
         private string _usuarioID;
         public string UsuarioID
         {
@@ -14,8 +18,6 @@ namespace LoginSystemPowerCode.Pages
                 _usuarioID = value;
             }
         }
-
-        private PaginaPrincipalViewModel _viewModel;
 
         public PaginaPrincipal()
 	    {
