@@ -9,9 +9,3 @@ width="250px" height="250px">
 
 - C#
 - .NET MAUI
-
-## Videos de prueba
-
-![Vista previa del video](https://img.youtube.com/vi/CNMiXJ1qw5M/0.jpg)
-
-[Ver video en YouTube](https://www.youtube.com/watch?v=CNMiXJ1qw5M)
